@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:rapid_fitness_mastery/high-intensity/high_home.dart';
+import 'package:rapid_fitness_mastery/low-intensity/low_home.dart';
+import 'package:rapid_fitness_mastery/med-itensity/med_home.dart';
+import 'nutrition/nutri_home.dart';
 
 
 class HomePage extends StatefulWidget {
@@ -70,7 +74,10 @@ class _HomePageState extends State<HomePage> {
                       ),
                       
                       onPressed: () {
-
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => LowHome(),
+                            ));
                       },
                     ),
                   ),
@@ -100,7 +107,11 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                       onPressed: () {
-                                       },
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => MedHome(),
+                            ));
+                      },
                     ),
                   ),
                 ),
@@ -130,6 +141,10 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                       onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => HighHome(),
+                            ));
                       },
                     ),
                   ),
@@ -167,7 +182,11 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                       onPressed: () {
-                              },
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => NurtiHome(),
+                            ));
+                      },
                     ),
                   ),
                 ),

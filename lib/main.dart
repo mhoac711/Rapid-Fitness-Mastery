@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:rapid_fitness_mastery/settings/saved.dart';
 
+import 'package:flutter/material.dart';
+import 'package:rapid_fitness_mastery/low-intensity/low_home.dart';
+import 'package:rapid_fitness_mastery/settings/saved.dart';
 import 'Exercise.dart';
 import 'home_page.dart';
 void main() {
@@ -101,11 +102,26 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.headline4,
             ),
             FloatingActionButton(
+              child: Text(
+                "Home page"
+              ),
                 onPressed: (){
                   Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => HomePage(),
                   ));
+
+                },
+            ),
+            FloatingActionButton(
+              child: Text(
+                "low abs"
+              ),
+                onPressed: (){
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => LowHome(),
+                      ));
 
                 }
             )
