@@ -3,7 +3,7 @@ import 'package:rapid_fitness_mastery/high-intensity/high_home.dart';
 import 'package:rapid_fitness_mastery/low-intensity/low_home.dart';
 import 'package:rapid_fitness_mastery/med-itensity/med_home.dart';
 import 'nutrition/nutri_home.dart';
-
+import 'Exercise.dart';
 
 class HomePage extends StatefulWidget {
 

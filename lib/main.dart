@@ -138,10 +138,7 @@ class _MyHomePageState extends State<MyHomePage> {
           exArr.add(pushUp);
           Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => saved(strArr: exArr,
-              )
-              )
-          );
+              MaterialPageRoute(builder: (context) => saved(strArr: exArr,)));
         },
         tooltip: 'Increment',
         child: const Icon(Icons.add),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'low_abs.dart';
+
 class LowHome extends StatefulWidget {
   const LowHome({Key? key}) : super(key: key);
 
@@ -121,6 +123,10 @@ class _LowHomeState extends State<LowHome> {
               ),
               iconSize: 150,
               onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => LowAbs(),
+                    ));
               },
             ),
           ),

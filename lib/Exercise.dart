@@ -9,6 +9,11 @@ class Exercise{
     description = "";
   }
 
+  String getTitle(){
+    return title;
+  }
+
+
 
 
 }
