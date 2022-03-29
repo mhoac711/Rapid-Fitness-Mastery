@@ -4,6 +4,7 @@ import 'package:rapid_fitness_mastery/low-intensity/low_home.dart';
 import 'package:rapid_fitness_mastery/settings/saved.dart';
 import 'Exercise.dart';
 import 'home_page.dart';
+import 'my-globals.dart' as globals;
 void main() {
   runApp(const MyApp());
 }

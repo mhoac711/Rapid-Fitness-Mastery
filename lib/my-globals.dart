@@ -1,0 +1,8 @@
+
+library globals;
+
+import 'dart:collection';
+
+import 'package:rapid_fitness_mastery/Exercise.dart';
+List<Exercise> globalEx = [];
+List<Exercise> savedList = globalEx.toSet().toList();

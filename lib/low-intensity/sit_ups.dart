@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:rapid_fitness_mastery/Exercise.dart';
+import 'package:rapid_fitness_mastery/my-globals.dart' as globals;
+
+import '../my-globals.dart';
 
 class SitUps extends StatelessWidget {
   final Exercise e;
@@ -83,14 +86,19 @@ class SitUps extends StatelessWidget {
     Container(
     alignment: Alignment.topLeft,
     margin: EdgeInsets.only(top: 10,left: 25),
-    child: Text(
-    'Major: Computer Science',
-    style: TextStyle(
-    fontFamily: 'PermanentMarker',
-    fontSize: 20,
-    fontWeight: FontWeight.normal,
-    color: Colors.tealAccent[100],
-    ),
+    child: ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        primary: Colors.lightBlueAccent,
+      ),
+      onPressed: (){
+        globalEx.add(e);
+
+      },
+      child: Text(
+        "Save"
+      ),
+
+
     ),
     ),
 

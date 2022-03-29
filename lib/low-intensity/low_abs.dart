@@ -1,7 +1,8 @@
 import 'dart:ui';
-
+import 'package:rapid_fitness_mastery/my-globals.dart' as globals;
 import 'package:flutter/material.dart';
 import 'package:rapid_fitness_mastery/Exercise.dart';
+import 'mount_climb.dart';
 import 'sit_ups.dart';
 class LowAbs extends StatefulWidget {
   const LowAbs({Key? key}) : super(key: key);
@@ -96,7 +97,12 @@ class _LowAbsState extends State<LowAbs> {
                       height: 100,
 
                       child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => MountClimb(e: mc,)));
+
+                          },
                           style: ElevatedButton.styleFrom(
                             primary: Colors.tealAccent,
                           ),
