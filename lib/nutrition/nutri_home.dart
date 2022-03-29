@@ -81,12 +81,13 @@ class _NurtiHomeState extends State<NurtiHome> {
                         alignment: Alignment.center,
                         icon: Container(
                           child: Text(
-                            'WL',
+                            'WEIGHT LOSS',
                             style: TextStyle(
                               fontSize: 38,
                               fontFamily: 'PermanentMarker',
                               fontWeight: FontWeight.normal,
                               color: Colors.lightBlue[900],
+
                             ),
                           ),
                         ),
