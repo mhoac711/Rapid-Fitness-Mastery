@@ -2,7 +2,6 @@ import 'dart:math';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:rapid_fitness_mastery/low-intensity/low_abs.dart';
 import 'low_abs.dart';
 
 class LowHome extends StatefulWidget {

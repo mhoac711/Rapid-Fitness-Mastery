@@ -45,9 +45,18 @@ class SitUps extends StatelessWidget {
               children: [
                 Container(
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.lightBlueAccent,
+                        offset: const Offset(
+                          10.0,
+                          10.0,
+                        ),
+                      )
+                    ],
                     border: Border.all(
-                      width: 5,
-                      color: Colors.deepPurple,
+                      width: 10,
+                      color: Colors.indigo,
                     ),
                   ),
                   margin: EdgeInsets.only(top: 35, left: 15, right: 15),
@@ -61,7 +70,7 @@ class SitUps extends StatelessWidget {
                 ),
     Container(
     alignment: Alignment.topLeft,
-    margin: EdgeInsets.only(top: 15,left: 25),
+    margin: EdgeInsets.only(top: 20,left: 25),
     child: Text(
     e.title,
     style: TextStyle(

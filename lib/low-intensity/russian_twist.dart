@@ -6,9 +6,9 @@ import 'package:rapid_fitness_mastery/my-globals.dart' as globals;
 
 import '../my-globals.dart';
 
-class MountClimb extends StatelessWidget {
+class RussianTwists extends StatelessWidget {
   final Exercise e;
-  const MountClimb({Key? key, required this.e}) : super(key: key);
+  const RussianTwists({Key? key, required this.e}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
