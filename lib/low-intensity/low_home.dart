@@ -28,12 +28,12 @@ class _LowHomeState extends State<LowHome> {
         ),
         backgroundColor: Colors.cyan[200],
         title: Text(
-          'F / H',
+          'U F M',
           style: TextStyle(
             fontFamily: 'LobsterTwo',
             fontWeight: FontWeight.bold,
             fontSize: 25,
-            color: Colors.tealAccent[100],
+            color: Colors.white,
           ),
         ),
         actions: [
@@ -56,12 +56,21 @@ class _LowHomeState extends State<LowHome> {
                         height: 150,
                         alignment: Alignment.topLeft,
                         margin:
-                        EdgeInsets.only(left: 90, bottom: 0, top: 30),
+                        EdgeInsets.only(left: 90, bottom: 0, top: 20),
                         decoration: BoxDecoration(
-                          color: Colors.white,
-                          border: Border.all(
-                            color: Colors.tealAccent,
-                            width: 5
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.lightBlueAccent,
+                                offset: const Offset(
+                                  20.0,
+                                  20.0,
+                                ),
+                              ),
+                            ],
+                            color: Colors.white,
+                            border: Border.all(
+                                color: Colors.tealAccent,
+                                width: 15
                             )),
                         child: TextButton(
                           style: ButtonStyle(
@@ -74,10 +83,11 @@ class _LowHomeState extends State<LowHome> {
                           child: Transform.rotate(
                               angle: 150,
                             child: Container(
-                              margin: EdgeInsets.only(top: 34, right: 30, left: 0),
                               width: 120,
+                              alignment: Alignment.centerLeft,
                               child: Text(
                                 'UPPER',
+                                softWrap: false,
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   fontSize: 30,
@@ -107,12 +117,21 @@ class _LowHomeState extends State<LowHome> {
                     height: 150,
                     alignment: Alignment.topLeft,
                     margin:
-                    EdgeInsets.only(left: 190, bottom: 20, top: 10),
+                    EdgeInsets.only(left: 190, bottom: 20),
                     decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.deepPurple,
+                          offset: const Offset(
+                            20.0,
+                              20.0,
+                          ),
+                        ),
+                    ],
                         color: Colors.white,
                         border: Border.all(
                             color: Colors.blueAccent,
-                            width: 5
+                            width: 15
                         )),
                     child: TextButton(
                       style: ButtonStyle(
@@ -125,10 +144,12 @@ class _LowHomeState extends State<LowHome> {
                       child: Transform.rotate(
                         angle: 150,
                         child: Container(
-                          margin: EdgeInsets.only(top: 34, right: 30, left: 0),
+                          alignment: Alignment.center,
                           width: 120,
                           child: Text(
                             'ABS',
+                            softWrap: false,
+
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               fontSize: 30,
@@ -164,10 +185,19 @@ class _LowHomeState extends State<LowHome> {
                     margin:
                     EdgeInsets.only(left: 110, bottom: 0, top: 70),
                     decoration: BoxDecoration(
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.lightBlueAccent,
+                            offset: const Offset(
+                              20.0,
+                              20.0,
+                            ),
+                          ),
+                        ],
                         color: Colors.white,
                         border: Border.all(
                             color: Colors.tealAccent,
-                            width: 5
+                            width: 15
                         )),
                     child: TextButton(
                       style: ButtonStyle(
@@ -180,10 +210,11 @@ class _LowHomeState extends State<LowHome> {
                       child: Transform.rotate(
                         angle: 150,
                         child: Container(
-                          margin: EdgeInsets.only(top: 35, right: 26, left: 0),
+                          alignment: Alignment.centerLeft,
                           width: 120,
                           child: Text(
                             'LOWER',
+                            softWrap: false,
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               fontSize: 30,

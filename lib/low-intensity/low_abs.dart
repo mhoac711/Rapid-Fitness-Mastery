@@ -16,8 +16,8 @@ class _LowAbsState extends State<LowAbs> {
   @override
   Widget build(BuildContext context) {
     Exercise su = Exercise('Sit Ups',
-        'Lay your back on the mat with knees pointing upwards, and use your core to pull yourself up and down');
-    Exercise mc = Exercise('Moutain Climber',
+        '1. Lay your back on the mat with knees pointing upwards \n\n2. Focus on using your core to pull yourself up and relax when going down');
+    Exercise mc = Exercise('Moutain Climbers',
         'Get into push up position and bring one knee to the opposite shoulder in alternating motions');
     Exercise rt = Exercise('Russian Twist',
         'Get into sit up position and rotate your abs to the right or left side. You should try to focus on using your core to move directions. Use a dumbbell for stronger exercise');
@@ -44,7 +44,7 @@ class _LowAbsState extends State<LowAbs> {
         ),
         backgroundColor: Colors.cyan[200],
         title: Text(
-          'F / H',
+          'U F M',
           style: TextStyle(
             fontFamily: 'LobsterTwo',
             fontWeight: FontWeight.bold,
@@ -64,7 +64,22 @@ class _LowAbsState extends State<LowAbs> {
               child: Column(
                 children: [
                   Container(
-                    margin: EdgeInsets.all(10),
+                    margin: EdgeInsets.only(top: 15, right: 25, left: 25, bottom: 10),
+                    decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.indigo,
+                          offset: const Offset(
+                            5.0,
+                            5.0,
+                          ),
+                        )
+                      ],
+                      border: Border.all(
+                        color: Colors.lightBlueAccent,
+                        width: 10,
+                      ),
+                    ),
                     child: SizedBox(
                       width: 400,
                       height: 100,
@@ -76,13 +91,13 @@ class _LowAbsState extends State<LowAbs> {
                                 MaterialPageRoute(builder: (context) => SitUps(e: su,)));
                           },
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.tealAccent,
+                            primary: Colors.tealAccent[100],
                           ),
 
                           child: Text(
                             su.title,
                             style: TextStyle(
-                              color: Colors.blue,
+                              color: Colors.blue[900],
                               fontSize: 25,
                             ),
                           )
@@ -91,7 +106,22 @@ class _LowAbsState extends State<LowAbs> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.all(10),
+                    margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
+                    decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.indigo,
+                          offset: const Offset(
+                            5.0,
+                            5.0,
+                          ),
+                        )
+                      ],
+                      border: Border.all(
+                        color: Colors.lightBlueAccent,
+                        width: 10,
+                      ),
+                    ),
                     child: SizedBox(
                       width: 400,
                       height: 100,
@@ -104,13 +134,13 @@ class _LowAbsState extends State<LowAbs> {
 
                           },
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.tealAccent,
+                            primary: Colors.tealAccent[100],
                           ),
 
                           child: Text(
                             mc.title,
                             style: TextStyle(
-                              color: Colors.blue,
+                              color: Colors.blue[900],
                               fontSize: 25,
                             ),
                           )
@@ -119,7 +149,22 @@ class _LowAbsState extends State<LowAbs> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.all(10),
+                    margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
+                    decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.indigo,
+                          offset: const Offset(
+                            5.0,
+                            5.0,
+                          ),
+                        )
+                      ],
+                      border: Border.all(
+                        color: Colors.lightBlueAccent,
+                        width: 10,
+                      ),
+                    ),
                     child: SizedBox(
                       width: 400,
                       height: 100,
@@ -127,13 +172,13 @@ class _LowAbsState extends State<LowAbs> {
                       child: ElevatedButton(
                           onPressed: () {},
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.tealAccent,
+                            primary: Colors.tealAccent[100],
                           ),
 
                           child: Text(
                             rt.title,
                             style: TextStyle(
-                              color: Colors.blue,
+                              color: Colors.blue[900],
                               fontSize: 25,
                             ),
                           )
@@ -142,7 +187,22 @@ class _LowAbsState extends State<LowAbs> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.all(10),
+                    margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
+                    decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.indigo,
+                          offset: const Offset(
+                            5.0,
+                            5.0,
+                          ),
+                        )
+                      ],
+                      border: Border.all(
+                        color: Colors.lightBlueAccent,
+                        width: 10,
+                      ),
+                    ),
                     child: SizedBox(
                       width: 400,
                       height: 100,
@@ -150,13 +210,13 @@ class _LowAbsState extends State<LowAbs> {
                       child: ElevatedButton(
                           onPressed: () {},
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.tealAccent,
+                            primary: Colors.tealAccent[100],
                           ),
 
                           child: Text(
                             pl.title,
                             style: TextStyle(
-                              color: Colors.blue,
+                              color: Colors.blue[900],
                               fontSize: 25,
                             ),
                           )
@@ -165,21 +225,37 @@ class _LowAbsState extends State<LowAbs> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.all(10),
+                    margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
+                    decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.indigo,
+                          offset: const Offset(
+                            5.0,
+                            5.0,
+                          ),
+                        )
+                      ],
+                      border: Border.all(
+                        color: Colors.lightBlueAccent,
+                        width: 10,
+                      ),
+                    ),
                     child: SizedBox(
                       width: 400,
                       height: 100,
 
+
                       child: ElevatedButton(
                           onPressed: () {},
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.tealAccent,
+                            primary: Colors.tealAccent[100],
                           ),
 
                           child: Text(
                             db.title,
                             style: TextStyle(
-                              color: Colors.blue,
+                              color: Colors.blue[900],
                               fontSize: 25,
                             ),
                           )
@@ -188,21 +264,37 @@ class _LowAbsState extends State<LowAbs> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.all(10),
+                    margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
+                    decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.indigo,
+                          offset: const Offset(
+                            5.0,
+                            5.0,
+                          ),
+                        )
+                      ],
+                      border: Border.all(
+                        color: Colors.lightBlueAccent,
+                        width: 10,
+                      ),
+                    ),
                     child: SizedBox(
                       width: 400,
                       height: 100,
 
+
                       child: ElevatedButton(
                           onPressed: () {},
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.tealAccent,
+                            primary: Colors.tealAccent[100],
                           ),
 
                           child: Text(
                             rc.title,
                             style: TextStyle(
-                              color: Colors.blue,
+                              color: Colors.blue[900],
                               fontSize: 25,
                             ),
                           )
@@ -211,7 +303,22 @@ class _LowAbsState extends State<LowAbs> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.all(10),
+                    margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
+                    decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.indigo,
+                          offset: const Offset(
+                            5.0,
+                            5.0,
+                          ),
+                        )
+                      ],
+                      border: Border.all(
+                        color: Colors.lightBlueAccent,
+                        width: 10,
+                      ),
+                    ),
                     child: SizedBox(
                       width: 400,
                       height: 100,
@@ -219,13 +326,13 @@ class _LowAbsState extends State<LowAbs> {
                       child: ElevatedButton(
                           onPressed: () {},
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.tealAccent,
+                            primary: Colors.tealAccent[100],
                           ),
 
                           child: Text(
                             cr.title,
                             style: TextStyle(
-                              color: Colors.blue,
+                              color: Colors.blue[900],
                               fontSize: 25,
                             ),
                           ),
@@ -234,28 +341,44 @@ class _LowAbsState extends State<LowAbs> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.all(10),
-                    child: SizedBox(
-                      width: 400,
-                      height: 100,
-
-                      child: ElevatedButton(
-                          onPressed: () {},
-                          style: ElevatedButton.styleFrom(
-                            primary: Colors.tealAccent,
+                    margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
+                    decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.indigo,
+                          offset: const Offset(
+                            5.0,
+                            5.0,
                           ),
-
-                          child: Text(
-                            hcr.title,
-                            style: TextStyle(
-                              color: Colors.blue,
-                              fontSize: 25,
-                            ),
-                          )
-
+                        )
+                      ],
+                      border: Border.all(
+                        color: Colors.lightBlueAccent,
+                        width: 10,
                       ),
                     ),
-                  ),
+                      child: SizedBox(
+                        width: 400,
+                        height: 100,
+
+                        child: ElevatedButton(
+
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.tealAccent[100],
+                            ),
+
+                            child: Text(
+                              hcr.title,
+                              style: TextStyle(
+                                color: Colors.blue[900],
+                                fontSize: 25,
+                              ),
+                            )
+
+                        ),
+                      ),
+                    ),
                 ],
               ),
             ),

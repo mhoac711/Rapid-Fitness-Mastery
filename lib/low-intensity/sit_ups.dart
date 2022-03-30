@@ -60,14 +60,14 @@ class SitUps extends StatelessWidget {
                   ),
                 ),
     Container(
-    alignment: Alignment.center,
-    margin: EdgeInsets.only(top: 15,left: 0),
+    alignment: Alignment.topLeft,
+    margin: EdgeInsets.only(top: 15,left: 25),
     child: Text(
     e.title,
     style: TextStyle(
     fontFamily: 'PermanentMarker',
-    fontSize: 20,
-    fontWeight: FontWeight.normal,
+    fontSize: 25,
+    fontWeight: FontWeight.bold,
     color: Colors.blueAccent,
     ),
     ),
@@ -86,11 +86,11 @@ class SitUps extends StatelessWidget {
     ),
     ),
     Container(
-    alignment: Alignment.topLeft,
-    margin: EdgeInsets.only(top: 10,left: 25),
+    alignment: Alignment.bottomCenter,
+    margin: EdgeInsets.only(top: 50,left: 0),
     child: ElevatedButton(
       style: ElevatedButton.styleFrom(
-        primary: Colors.lightBlueAccent,
+        primary: Colors.deepPurple,
       ),
       onPressed: (){
         globalEx.add(e);
