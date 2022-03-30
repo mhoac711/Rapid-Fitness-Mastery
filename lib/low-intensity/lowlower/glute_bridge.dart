@@ -6,9 +6,9 @@ import 'package:rapid_fitness_mastery/my-globals.dart' as globals;
 
 import '../../my-globals.dart';
 
-class ArmCircle extends StatelessWidget {
+class GluteBridge extends StatelessWidget {
   final Exercise e;
-  const ArmCircle({Key? key, required this.e}) : super(key: key);
+  const GluteBridge({Key? key, required this.e}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
