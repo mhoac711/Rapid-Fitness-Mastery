@@ -2,7 +2,8 @@ import 'dart:math';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'low_abs.dart';
+import 'lowabs/low_abs.dart';
+import 'lowupper/low_upper.dart';
 
 class LowHome extends StatefulWidget {
   const LowHome({Key? key}) : super(key: key);
@@ -98,6 +99,10 @@ class _LowHomeState extends State<LowHome> {
                             ),
                           ),
                           onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => LowUpper()));
+
                           },
                         ),
                       ),
