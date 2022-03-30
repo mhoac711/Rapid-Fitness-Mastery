@@ -1,5 +1,8 @@
-import 'package:flutter/material.dart';
+import 'dart:math';
+import 'dart:ui';
 
+import 'package:flutter/material.dart';
+import 'package:rapid_fitness_mastery/low-intensity/low_abs.dart';
 import 'low_abs.dart';
 
 class LowHome extends StatefulWidget {
@@ -42,93 +45,161 @@ class _LowHomeState extends State<LowHome> {
       ),
       body: Column(
         children: [
-          Container(
-            child: Row(
-              children: [
-                Container(
-                  margin:
-                  EdgeInsets.only(left: 20, right: 10, bottom: 15, top: 40),
-                  decoration: ShapeDecoration(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(16.0),
-                      ),
-                      color: Colors.tealAccent[100]),
-                  child: IconButton(
-                    alignment: Alignment.center,
-                    icon: Container(
-                      child: Text(
-                        'UPPER',
-                        style: TextStyle(
-                          fontSize: 38,
-                          fontFamily: 'PermanentMarker',
-                          fontWeight: FontWeight.normal,
-                          color: Colors.lightBlue[900],
+          Row(
+            children: [
+              Container(
+                  child:
+                    Transform.rotate(
+                      angle: pi/4,
+                      child: Container(
+                        width: 150,
+                        height: 150,
+                        alignment: Alignment.topLeft,
+                        margin:
+                        EdgeInsets.only(left: 90, bottom: 0, top: 30),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          border: Border.all(
+                            color: Colors.tealAccent,
+                            width: 5
+                            )),
+                        child: TextButton(
+                          style: ButtonStyle(
+                            shape: MaterialStateProperty.all(
+                                RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(0),
+                                ),
+                            ),
+                          ),
+                          child: Transform.rotate(
+                              angle: 150,
+                            child: Container(
+                              margin: EdgeInsets.only(top: 34, right: 30, left: 0),
+                              width: 120,
+                              child: Text(
+                                'UPPER',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 30,
+                                  fontFamily: 'PermanentMarker',
+                                  fontWeight: FontWeight.normal,
+                                  color: Colors.lightBlue[900],
+                                ),
+                              ),
+                            ),
+                          ),
+                          onPressed: () {
+                          },
                         ),
                       ),
-                    ),
-                    iconSize: 150,
-                    onPressed: () {
-                    },
-                  ),
-                ),
-                Container(
-                margin:
-                EdgeInsets.only(left: 20, right: 10, bottom: 15, top: 40),
-                decoration: ShapeDecoration(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(16.0),
-                   ),
-                    color: Colors.tealAccent[100]),
-                child: IconButton(
-                  alignment: Alignment.center,
-                  icon: Container(
-                    child: Text(
-                      'LOWER',
-                      style: TextStyle(
-                      fontSize: 38,
-                      fontFamily: 'PermanentMarker',
-                      fontWeight: FontWeight.normal,
-                      color: Colors.lightBlue[900],
+                    ),),
+            ],
+          ),
+
+          Row(
+            children: [
+              Container(
+                child:
+                Transform.rotate(
+                  angle: pi/4,
+                  child: Container(
+                    width: 150,
+                    height: 150,
+                    alignment: Alignment.topLeft,
+                    margin:
+                    EdgeInsets.only(left: 190, bottom: 20, top: 10),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        border: Border.all(
+                            color: Colors.blueAccent,
+                            width: 5
+                        )),
+                    child: TextButton(
+                      style: ButtonStyle(
+                        shape: MaterialStateProperty.all(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(0),
+                          ),
+                        ),
                       ),
-                     ),
+                      child: Transform.rotate(
+                        angle: 150,
+                        child: Container(
+                          margin: EdgeInsets.only(top: 34, right: 30, left: 0),
+                          width: 120,
+                          child: Text(
+                            'ABS',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 30,
+                              fontFamily: 'PermanentMarker',
+                              fontWeight: FontWeight.normal,
+                              color: Colors.lightBlue[900],
+                            ),
+                          ),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => LowAbs(),
+                            ));
+                      },
+                    ),
                   ),
-                    iconSize: 150,
-                    onPressed: () {
-                    },
+                ),),
+            ],
+          ),
+
+          Row(
+            children: [
+              Container(
+                child:
+                Transform.rotate(
+                  angle: pi/4,
+                  child: Container(
+                    width: 150,
+                    height: 150,
+                    alignment: Alignment.topLeft,
+                    margin:
+                    EdgeInsets.only(left: 110, bottom: 0, top: 70),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        border: Border.all(
+                            color: Colors.tealAccent,
+                            width: 5
+                        )),
+                    child: TextButton(
+                      style: ButtonStyle(
+                        shape: MaterialStateProperty.all(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(0),
+                          ),
+                        ),
+                      ),
+                      child: Transform.rotate(
+                        angle: 150,
+                        child: Container(
+                          margin: EdgeInsets.only(top: 35, right: 26, left: 0),
+                          width: 120,
+                          child: Text(
+                            'LOWER',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 30,
+                              fontFamily: 'PermanentMarker',
+                              fontWeight: FontWeight.normal,
+                              color: Colors.lightBlue[900],
+                            ),
+                          ),
+                        ),
+                      ),
+                      onPressed: () {
+                      },
+                    ),
                   ),
-                ),
-              ],
-              )
-            ),
-          Container(
-            margin:
-            EdgeInsets.only(left: 20, right: 10, bottom: 15, top: 40),
-            decoration: ShapeDecoration(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(16.0),
-                ),
-                color: Colors.tealAccent[100]),
-            child: IconButton(
-              alignment: Alignment.center,
-              icon: Container(
-                child: Text(
-                  'ABS',
-                  style: TextStyle(
-                    fontSize: 38,
-                    fontFamily: 'PermanentMarker',
-                    fontWeight: FontWeight.normal,
-                    color: Colors.lightBlue[900],
-                  ),
-                ),
-              ),
-              iconSize: 150,
-              onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => LowAbs(),
-                    ));
-              },
-            ),
+                ),),
+            ],
           ),
         ],
       )

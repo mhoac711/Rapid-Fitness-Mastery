@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:rapid_fitness_mastery/Exercise.dart';
 import 'package:rapid_fitness_mastery/my-globals.dart' as globals;
@@ -92,6 +94,52 @@ class SitUps extends StatelessWidget {
       ),
       onPressed: (){
         globalEx.add(e);
+        showDialog(
+          context: context,
+          builder: (BuildContext context) => AlertDialog(
+            content: SizedBox(
+              height: 30,
+              width:  100,
+              child: Center(
+                child: Container(
+                  margin: EdgeInsets.only(top:7),
+                  child: Text(
+                    'Exercise Saved',
+                    style: TextStyle(
+                      fontSize: 25,
+                      color: Colors.blue[900],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            actions: [
+              Center(
+                child: Container(
+                  margin: EdgeInsets.only(bottom: 5),
+                  child: OutlinedButton(
+                    style: ButtonStyle(
+                      shape: MaterialStateProperty.all(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        )
+                      )
+                    ),
+                    child: Text(
+                        'OK',
+                      style: TextStyle(
+                        color: Colors.blue[900],
+                      ),
+
+                    ),
+                    onPressed: () => Navigator.pop(context),
+                  ),
+                ),
+              )
+            ]
+
+          )
+        );
 
       },
       child: Text(

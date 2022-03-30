@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:rapid_fitness_mastery/high-intensity/high_home.dart';
 import 'package:rapid_fitness_mastery/low-intensity/low_home.dart';
@@ -27,7 +29,7 @@ class _HomePageState extends State<HomePage> {
         ),
         backgroundColor: Colors.cyan[200],
         title: Text(
-          'F / H',
+          'U F M',
           style: TextStyle(
             fontFamily: 'LobsterTwo',
             fontWeight: FontWeight.bold,
@@ -62,10 +64,13 @@ class _HomePageState extends State<HomePage> {
                     child: IconButton(
                       alignment: Alignment.center,
                       icon: Container(
+                        alignment: Alignment.topCenter,
+                        margin: EdgeInsets.only(top: 80),
                         child: Text(
-                          'LOW',
+                          'L\nO\nW',
+                          textAlign: TextAlign.center,
                           style: TextStyle(
-                            fontSize: 38,
+                            fontSize: 45,
                             fontFamily: 'PermanentMarker',
                             fontWeight: FontWeight.normal,
                             color: Colors.lightBlue[900],
@@ -96,10 +101,13 @@ class _HomePageState extends State<HomePage> {
                     child: IconButton(
                       alignment: Alignment.center,
                       icon: Container(
+                        alignment: Alignment.center,
+                        margin: EdgeInsets.only(top: 25),
                         child: Text(
-                          'MED',
+                          'M\nE\nD',
+                          textAlign: TextAlign.center,
                           style: TextStyle(
-                            fontSize: 38,
+                            fontSize: 45,
                             fontFamily: 'PermanentMarker',
                             fontWeight: FontWeight.normal,
                             color: Colors.lightBlue[900],
@@ -122,18 +130,20 @@ class _HomePageState extends State<HomePage> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(0),
                       ),
-                      color: Colors.cyan[200]),
+                      color: Colors.tealAccent[100]),
                   child: SizedBox(
                     height: 475,
                     width: 110,
                     child: IconButton(
                       alignment: Alignment.center,
                       icon: Container(
+                        alignment: Alignment.topCenter,
+                        margin: EdgeInsets.only(top: 80),
                         child: Text(
-                          'HIGH',
+                          'H\nI\nG\nH',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            fontSize: 38,
+                            fontSize: 45,
                             fontFamily: 'PermanentMarker',
                             fontWeight: FontWeight.normal,
                             color: Colors.lightBlue[900],
@@ -167,7 +177,6 @@ class _HomePageState extends State<HomePage> {
                   child: SizedBox(
                     width: 360,
                     height: 100,
-
                     child: IconButton(
                       alignment: Alignment.center,
                       icon: Container(
