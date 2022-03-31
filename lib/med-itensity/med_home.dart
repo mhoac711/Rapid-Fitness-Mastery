@@ -3,6 +3,9 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
+import 'medabs/med_abs.dart';
+import 'medupper/med_upper.dart';
+
 class MedHome extends StatefulWidget {
   const MedHome({Key? key}) : super(key: key);
 
@@ -97,6 +100,10 @@ class _MedHomeState extends State<MedHome> {
                           ),
                         ),
                         onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => MedUpper()));
+
                         },
                       ),
                     ),
@@ -159,10 +166,10 @@ class _MedHomeState extends State<MedHome> {
                           ),
                         ),
                         onPressed: () {
-                        //   Navigator.push(
-                        //       context,
-                        //       MaterialPageRoute(builder: (context) => (),
-                        //       ));
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => MedAbs(),
+                              ));
                          },
                       ),
                     ),
