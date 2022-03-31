@@ -2,6 +2,7 @@ import 'dart:math';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:rapid_fitness_mastery/med-itensity/medlower/med_lower.dart';
 
 import 'medabs/med_abs.dart';
 import 'medupper/med_upper.dart';
@@ -231,6 +232,10 @@ class _MedHomeState extends State<MedHome> {
                           ),
                         ),
                         onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => MedLower(),
+                              ));
                         },
                       ),
                     ),

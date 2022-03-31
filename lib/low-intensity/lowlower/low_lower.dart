@@ -131,14 +131,14 @@ class _LowLowerState extends State<LowLower> {
                       onPressed: () {
                         Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => GobletSquat(e: gb,)));
+                            MaterialPageRoute(builder: (context) => GobletSquat(e: gs,)));
                       },
                       style: ElevatedButton.styleFrom(
                         primary: Colors.tealAccent[100],
                       ),
 
                       child: Text(
-                        gb.title,
+                        gs.title,
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Colors.blue[900],
