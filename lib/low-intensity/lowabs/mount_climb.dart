@@ -62,7 +62,7 @@ class MountClimb extends StatelessWidget {
                     ),
                     margin: EdgeInsets.only(top: 35, left: 15, right: 15),
                     child: Image.asset(
-                      'assets/images/i.jpg',
+                      'assets/images/mountclimb.gif',
                       height: 250,
                       width: 350,
                       scale: 50,

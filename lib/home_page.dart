@@ -4,8 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:rapid_fitness_mastery/high-intensity/high_home.dart';
 import 'package:rapid_fitness_mastery/low-intensity/low_home.dart';
 import 'package:rapid_fitness_mastery/med-itensity/med_home.dart';
+import 'diet/diet_home.dart';
 import 'nutrition/nutri_home.dart';
 import 'Exercise.dart';
+import 'workouts/workouts_home.dart';
 
 class HomePage extends StatefulWidget {
 
@@ -48,24 +50,58 @@ class _HomePageState extends State<HomePage> {
         children: [
           Container(
             alignment: Alignment.center,
+            margin: EdgeInsets.only(left: 15, right: 15, top:18),
             child: Row(
               children: [
                 Container(
-                  margin:
-                  EdgeInsets.only(left: 15, right: 0, bottom: 5, top: 00),
+                  decoration: ShapeDecoration(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(0),
+                      ),
+                      color: Colors.cyan[200]),
+                  child: SizedBox(
+                    width: 360,
+                    height: 60,
+                    child: IconButton(
+                      alignment: Alignment.center,
+                      icon: Container(
+                        child: Text(
+                          '* * * INTENSITY * * *',
+                          style: TextStyle(
+                            fontSize: 38,
+                            fontFamily: 'PermanentMarker',
+                            fontWeight: FontWeight.normal,
+                            color: Colors.lightBlue[900],
+                          ),
+                        ),
+                      ),
+                      onPressed: () {
+                      },
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            child: Row(
+              children: [
+                Container(
+                  margin: EdgeInsets.only(right:18, left: 15),
+                  alignment: Alignment.center,
                   decoration: ShapeDecoration(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(0),
                       ),
                       color: Colors.tealAccent[100]),
                   child: SizedBox(
-                    height: 475,
-                    width: 110,
+                    height: 455,
+                    width: 105,
                     child: IconButton(
                       alignment: Alignment.center,
                       icon: Container(
                         alignment: Alignment.topCenter,
-                        margin: EdgeInsets.only(top: 80),
+                        margin: EdgeInsets.only(top: 100),
                         child: Text(
                           'L\nO\nW',
                           textAlign: TextAlign.center,
@@ -77,7 +113,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                       ),
-                      
+
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -88,57 +124,20 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 Container(
-                  margin:
-                  EdgeInsets.only(left: 15, right: 0, bottom: 5, top: 50),
+                  margin: EdgeInsets.only(right: 18,left: 1, top: 40),
                   decoration: ShapeDecoration(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(0),
                       ),
                       color: Colors.cyan[200]),
                   child: SizedBox(
-                    height:475,
+                    height:450,
                     width: 110,
                     child: IconButton(
                       alignment: Alignment.center,
                       icon: Container(
                         alignment: Alignment.center,
                         margin: EdgeInsets.only(top: 25),
-                        child: Text(
-                          'M\nE\nD',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 45,
-                            fontFamily: 'PermanentMarker',
-                            fontWeight: FontWeight.normal,
-                            color: Colors.lightBlue[900],
-                          ),
-                        ),
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => MedHome(),
-                            ));
-                      },
-                    ),
-                  ),
-                ),
-                Container(
-                  margin:
-                  EdgeInsets.only(left: 15, right: 15, bottom: 5, top: 00),
-                  decoration: ShapeDecoration(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(0),
-                      ),
-                      color: Colors.tealAccent[100]),
-                  child: SizedBox(
-                    height: 475,
-                    width: 110,
-                    child: IconButton(
-                      alignment: Alignment.center,
-                      icon: Container(
-                        alignment: Alignment.topCenter,
-                        margin: EdgeInsets.only(top: 80),
                         child: Text(
                           'H\nI\nG\nH',
                           textAlign: TextAlign.center,
@@ -159,31 +158,26 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ),
-              ],
-            ),
-          ),
-          Container(
-            alignment: Alignment.center,
-            child: Row(
-              children: [
                 Container(
-                  margin:
-                  EdgeInsets.only(left: 15, right: 15, bottom: 15, top: 5),
-                  decoration: ShapeDecoration(
+                  margin: EdgeInsets.only(right: 18, left: 1),
+                 decoration: ShapeDecoration(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(0),
                       ),
-                      color: Colors.cyan[200]),
+                      color: Colors.tealAccent[100]),
                   child: SizedBox(
-                    width: 360,
-                    height: 100,
+                    height: 455,
+                    width: 105,
                     child: IconButton(
                       alignment: Alignment.center,
                       icon: Container(
+                        alignment: Alignment.topCenter,
+                        margin: EdgeInsets.only(top: 100),
                         child: Text(
-                          'NUTRITION',
+                          'M\nE\nD',
+                          textAlign: TextAlign.center,
                           style: TextStyle(
-                            fontSize: 38,
+                            fontSize: 45,
                             fontFamily: 'PermanentMarker',
                             fontWeight: FontWeight.normal,
                             color: Colors.lightBlue[900],
@@ -193,13 +187,48 @@ class _HomePageState extends State<HomePage> {
                       onPressed: () {
                         Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => NurtiHome(),
+                            MaterialPageRoute(builder: (context) => MedHome(),
                             ));
                       },
                     ),
                   ),
                 ),
               ],
+            ),
+          ),
+          Container(
+            alignment: Alignment.center,
+            margin: EdgeInsets.only(top: 15),
+            child: Container(
+               decoration: ShapeDecoration(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(0),
+                  ),
+                  color: Colors.cyan[200]),
+              child: SizedBox(
+                width: 360,
+                height: 60,
+                child: IconButton(
+                  alignment: Alignment.center,
+                  icon: Container(
+                    child: Text(
+                      '* * WORKOUTS * *',
+                      style: TextStyle(
+                        fontSize: 38,
+                        fontFamily: 'PermanentMarker',
+                        fontWeight: FontWeight.normal,
+                        color: Colors.lightBlue[900],
+                      ),
+                    ),
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => WorkoutHome(),
+                        ));
+                  },
+                ),
+              ),
             ),
           ),
       ],

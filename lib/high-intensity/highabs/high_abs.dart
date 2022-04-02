@@ -8,7 +8,6 @@ import 'bicycle_crunch.dart';
 import 'hanging_leg_raise.dart';
 import 'hollow_hold.dart';
 import 'l_sit.dart';
-import 'v_sit.dart';
 import 'v_up.dart';
 
 class HighAbs extends StatefulWidget {
