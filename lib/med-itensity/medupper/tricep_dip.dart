@@ -160,30 +160,6 @@ class TricepDip extends StatelessWidget {
                     ),
                   ),
 
-                  //   ListView.builder(
-                  //     itemCount: e.length,
-                  //     itemBuilder: (BuildContext context, int index) {
-                  //       return Container(
-                  //           height: 20,
-                  //           margin: EdgeInsets.all(2),
-                  //           child: Center(
-                  //               child: Column(
-                  //                 children: [
-                  //                   Text(
-                  //                     '${e[index].title}',
-                  //                     style: TextStyle(fontSize: 12),
-                  //                   ),
-                  //                   Text(
-                  //                     '${e[index].description}',
-                  //                     style: TextStyle(fontSize: 12),
-                  //                   )
-                  //                 ],
-                  //               )
-                  //
-                  //           )
-                  //       );
-                  //     },
-                  //   ),
                 ],
 
 

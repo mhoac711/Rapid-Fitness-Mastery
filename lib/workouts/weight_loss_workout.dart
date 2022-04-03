@@ -24,6 +24,7 @@ import 'package:rapid_fitness_mastery/med-itensity/medupper/tricep_dip.dart';
 import 'package:rapid_fitness_mastery/my-globals.dart' as globals;
 import 'package:flutter/material.dart';
 import 'package:rapid_fitness_mastery/Exercise.dart';
+import 'package:rapid_fitness_mastery/my-globals.dart';
 
 
 
@@ -1107,6 +1108,75 @@ class _WeightLossWorkoutState extends State<WeightLossWorkout> {
                   ),
                 ),
               ),
+        Container(
+          alignment: Alignment.bottomCenter,
+          margin: EdgeInsets.only(top: 0, left: 0, bottom: 10),
+          child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              primary: Colors.deepPurple,
+            ),
+            onPressed: (){
+              globalEx.add(hk);
+              globalEx.add(sj);
+              globalEx.add(jl);
+              globalEx.add(rl);
+              globalEx.add(jj);
+              globalEx.add(mc);
+              globalEx.add(pl);
+              globalEx.add(sq);
+
+              showDialog(
+                  context: context,
+                  builder: (BuildContext context) => AlertDialog(
+                      content: SizedBox(
+                        height: 30,
+                        width:  100,
+                        child: Center(
+                          child: Container(
+                            margin: EdgeInsets.only(top:7),
+                            child: Text(
+                              'Workout Saved',
+                              style: TextStyle(
+                                fontSize: 25,
+                                color: Colors.blue[900],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      actions: [
+                        Center(
+                          child: Container(
+                            margin: EdgeInsets.only(bottom: 5),
+                            child: OutlinedButton(
+                              style: ButtonStyle(
+                                  shape: MaterialStateProperty.all(
+                                      RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(10),
+                                      )
+                                  )
+                              ),
+                              child: Text(
+                                'OK',
+                                style: TextStyle(
+                                  color: Colors.blue[900],
+                                ),
+
+                              ),
+                              onPressed: () => Navigator.pop(context),
+                            ),
+                          ),
+                        )
+                      ]
+
+                  )
+              );
+
+            },
+            child: Text(
+                "Save All"
+            ),
+          ),),
 
             ],
           ),
