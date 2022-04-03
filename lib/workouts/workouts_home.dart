@@ -6,6 +6,7 @@ import 'package:rapid_fitness_mastery/med-itensity/medabs/med_abs.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medlower/med_lower.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medupper/med_upper.dart';
 import 'package:rapid_fitness_mastery/workouts/shred_workout.dart';
+import 'package:rapid_fitness_mastery/workouts/weight_loss_workout.dart';
 
 class WorkoutHome extends StatefulWidget {
   const WorkoutHome({Key? key}) : super(key: key);
@@ -169,7 +170,7 @@ class _WorkoutHomeState extends State<WorkoutHome> {
                         onPressed: () {
                           Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => MedAbs(),
+                              MaterialPageRoute(builder: (context) => WeightLossWorkout(),
                               ));
                         },
                       ),

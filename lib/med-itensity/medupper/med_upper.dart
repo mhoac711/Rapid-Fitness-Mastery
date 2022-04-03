@@ -1,6 +1,5 @@
 import 'dart:ui';
 import 'package:rapid_fitness_mastery/med-itensity/medupper/res_band_cross.dart';
-import 'package:rapid_fitness_mastery/med-itensity/medupper/tricep_dip.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medupper/yoga_push_up.dart';
 import 'package:rapid_fitness_mastery/my-globals.dart' as globals;
 import 'package:flutter/material.dart';
@@ -11,6 +10,7 @@ import 'chin_up.dart';
 import 'db_push_up.dart';
 import 'dumbbell_flye.dart';
 import 'lateral_raise.dart';
+import 'tricep_dip.dart';
 import 'zottman_curl.dart';
 
 class MedUpper extends StatefulWidget {
@@ -190,7 +190,7 @@ class _MedUpperState extends State<MedUpper> {
                       onPressed: () {
                         Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => TrciepDip(e: td,)));
+                            MaterialPageRoute(builder: (context) => TricepDip(e: td,)));
 
                       },
                       style: ElevatedButton.styleFrom(

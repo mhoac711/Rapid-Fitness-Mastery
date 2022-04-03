@@ -117,7 +117,7 @@ class _ShredWorkoutState extends State<ShredWorkout> {
                       child: Text(
                         "Shredding: These are exercises designed to lose body fat, in order to make "
                             "muscles look more defined and toned.",
-                        textAlign: TextAlign.center,
+                        textAlign: TextAlign.left,
                         style: TextStyle(
                           color: Colors.blue[900],
                           fontSize: 20,

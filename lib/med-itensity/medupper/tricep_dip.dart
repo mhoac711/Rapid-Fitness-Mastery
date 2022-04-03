@@ -6,9 +6,9 @@ import 'package:rapid_fitness_mastery/my-globals.dart' as globals;
 
 import '../../my-globals.dart';
 
-class TrciepDip extends StatelessWidget {
+class TricepDip extends StatelessWidget {
   final Exercise e;
-  const TrciepDip({Key? key, required this.e}) : super(key: key);
+  const TricepDip({Key? key, required this.e}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
