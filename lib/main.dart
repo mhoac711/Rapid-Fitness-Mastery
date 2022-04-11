@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:rapid_fitness_mastery/low-intensity/low_home.dart';
 import 'package:rapid_fitness_mastery/settings/saved.dart';
+import 'package:rapid_fitness_mastery/welcome_screen.dart';
 import 'Exercise.dart';
 import 'home_page.dart';
 import 'my-globals.dart' as globals;
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blueGrey,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: WelcomeScreen(),
     );
   }
 }
