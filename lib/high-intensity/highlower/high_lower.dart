@@ -5,6 +5,7 @@ import 'package:rapid_fitness_mastery/high-intensity/highlower/running.dart';
 import 'package:rapid_fitness_mastery/my-globals.dart' as globals;
 import 'package:flutter/material.dart';
 import 'package:rapid_fitness_mastery/Exercise.dart';
+import 'package:rapid_fitness_mastery/settings/saved_home_page.dart';
 
 import 'burpees.dart';
 import 'elevator_squat.dart';
@@ -73,8 +74,12 @@ class _HighLowerState extends State<HighLower> {
         ),
         actions: [
           IconButton(
-
-            icon: Icon(Icons.settings), onPressed: () {},
+            icon: Icon(Icons.settings), onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SavedHomePage(),
+                ));
+          },
           ),
         ],
       ),

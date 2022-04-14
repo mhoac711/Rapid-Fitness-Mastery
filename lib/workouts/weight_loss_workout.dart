@@ -25,6 +25,7 @@ import 'package:rapid_fitness_mastery/my-globals.dart' as globals;
 import 'package:flutter/material.dart';
 import 'package:rapid_fitness_mastery/Exercise.dart';
 import 'package:rapid_fitness_mastery/my-globals.dart';
+import 'package:rapid_fitness_mastery/settings/saved_home_page.dart';
 
 
 
@@ -112,8 +113,12 @@ class _WeightLossWorkoutState extends State<WeightLossWorkout> {
         ),
         actions: [
           IconButton(
-
-            icon: Icon(Icons.settings), onPressed: () {},
+            icon: Icon(Icons.settings), onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SavedHomePage(),
+                ));
+          },
           ),
         ],
       ),
@@ -1116,14 +1121,14 @@ class _WeightLossWorkoutState extends State<WeightLossWorkout> {
               primary: Colors.deepPurple,
             ),
             onPressed: (){
-              globalEx.add(hk);
-              globalEx.add(sj);
-              globalEx.add(jl);
-              globalEx.add(rl);
-              globalEx.add(jj);
-              globalEx.add(mc);
-              globalEx.add(pl);
-              globalEx.add(sq);
+              globalWorkEx.add(hk);
+              globalWorkEx.add(sj);
+              globalWorkEx.add(jl);
+              globalWorkEx.add(rl);
+              globalWorkEx.add(jj);
+              globalWorkEx.add(mc);
+              globalWorkEx.add(pl);
+              globalWorkEx.add(sq);
 
               showDialog(
                   context: context,

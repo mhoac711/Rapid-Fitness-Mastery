@@ -43,8 +43,12 @@ class _SavedHomePageState extends State<SavedHomePage> {
           ),
           actions: [
             IconButton(
-
-              icon: Icon(Icons.settings), onPressed: () {  },
+              icon: Icon(Icons.settings), onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SavedHomePage(),
+                  ));
+            },
             ),
           ],
         ),

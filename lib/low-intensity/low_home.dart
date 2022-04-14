@@ -2,6 +2,7 @@ import 'dart:math';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:rapid_fitness_mastery/settings/saved_home_page.dart';
 import 'lowabs/low_abs.dart';
 import 'lowlower/low_lower.dart';
 import 'lowupper/low_upper.dart';
@@ -39,8 +40,12 @@ class _LowHomeState extends State<LowHome> {
         ),
         actions: [
           IconButton(
-
-            icon: Icon(Icons.settings), onPressed: () {  },
+            icon: Icon(Icons.settings), onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SavedHomePage(),
+                ));
+          },
           ),
         ],
       ),

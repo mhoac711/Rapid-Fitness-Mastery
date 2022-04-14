@@ -3,6 +3,7 @@ import 'package:rapid_fitness_mastery/low-intensity/lowabs/plank.dart';
 import 'package:rapid_fitness_mastery/my-globals.dart' as globals;
 import 'package:flutter/material.dart';
 import 'package:rapid_fitness_mastery/Exercise.dart';
+import 'package:rapid_fitness_mastery/settings/saved_home_page.dart';
 import 'crunches.dart';
 import 'dead_bug.dart';
 import 'high_crunches.dart';
@@ -60,8 +61,12 @@ class _LowAbsState extends State<LowAbs> {
         ),
         actions: [
           IconButton(
-
-            icon: Icon(Icons.settings), onPressed: () {},
+            icon: Icon(Icons.settings), onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SavedHomePage(),
+                ));
+          },
           ),
         ],
       ),

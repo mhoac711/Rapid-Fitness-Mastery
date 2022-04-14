@@ -2,6 +2,7 @@ import 'dart:ui';
 import 'package:rapid_fitness_mastery/my-globals.dart' as globals;
 import 'package:flutter/material.dart';
 import 'package:rapid_fitness_mastery/Exercise.dart';
+import 'package:rapid_fitness_mastery/settings/saved_home_page.dart';
 
 import 'arm_circle.dart';
 import 'bicep_curl.dart';
@@ -68,8 +69,12 @@ class _LowUpperState extends State<LowUpper> {
         ),
         actions: [
           IconButton(
-
-            icon: Icon(Icons.settings), onPressed: () {},
+            icon: Icon(Icons.settings), onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SavedHomePage(),
+                ));
+          },
           ),
         ],
       ),

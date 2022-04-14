@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medabs/med_abs.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medlower/med_lower.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medupper/med_upper.dart';
+import 'package:rapid_fitness_mastery/settings/saved_home_page.dart';
 import 'package:rapid_fitness_mastery/workouts/shred_workout.dart';
 import 'package:rapid_fitness_mastery/workouts/weight_loss_workout.dart';
 
@@ -41,8 +42,12 @@ class _WorkoutHomeState extends State<WorkoutHome> {
           ),
           actions: [
             IconButton(
-
-              icon: Icon(Icons.settings), onPressed: () {  },
+              icon: Icon(Icons.settings), onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SavedHomePage(),
+                  ));
+            },
             ),
           ],
         ),

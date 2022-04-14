@@ -2,6 +2,7 @@ import 'dart:ui';
 import 'package:rapid_fitness_mastery/my-globals.dart' as globals;
 import 'package:flutter/material.dart';
 import 'package:rapid_fitness_mastery/Exercise.dart';
+import 'package:rapid_fitness_mastery/settings/saved_home_page.dart';
 
 import 'bird_dog.dart';
 import 'butt_kicks.dart';
@@ -97,8 +98,12 @@ class _LowLowerState extends State<LowLower> {
         ),
         actions: [
           IconButton(
-
-            icon: Icon(Icons.settings), onPressed: () {},
+            icon: Icon(Icons.settings), onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SavedHomePage(),
+                ));
+          },
           ),
         ],
       ),

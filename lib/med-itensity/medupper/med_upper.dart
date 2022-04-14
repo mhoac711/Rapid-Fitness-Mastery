@@ -4,6 +4,7 @@ import 'package:rapid_fitness_mastery/med-itensity/medupper/yoga_push_up.dart';
 import 'package:rapid_fitness_mastery/my-globals.dart' as globals;
 import 'package:flutter/material.dart';
 import 'package:rapid_fitness_mastery/Exercise.dart';
+import 'package:rapid_fitness_mastery/settings/saved_home_page.dart';
 
 import 'bench_press.dart';
 import 'chin_up.dart';
@@ -71,8 +72,12 @@ class _MedUpperState extends State<MedUpper> {
         ),
         actions: [
           IconButton(
-
-            icon: Icon(Icons.settings), onPressed: () {},
+            icon: Icon(Icons.settings), onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SavedHomePage(),
+                ));
+          },
           ),
         ],
       ),

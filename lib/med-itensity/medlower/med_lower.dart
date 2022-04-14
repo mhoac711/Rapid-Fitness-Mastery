@@ -6,6 +6,7 @@ import 'package:rapid_fitness_mastery/med-itensity/medlower/wall_sit.dart';
 import 'package:rapid_fitness_mastery/my-globals.dart' as globals;
 import 'package:flutter/material.dart';
 import 'package:rapid_fitness_mastery/Exercise.dart';
+import 'package:rapid_fitness_mastery/settings/saved_home_page.dart';
 
 import 'alt_toe_touch.dart';
 import 'box_jump.dart';
@@ -81,8 +82,12 @@ class _MedLowerState extends State<MedLower> {
         ),
         actions: [
           IconButton(
-
-            icon: Icon(Icons.settings), onPressed: () {},
+            icon: Icon(Icons.settings), onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SavedHomePage(),
+                ));
+          },
           ),
         ],
       ),

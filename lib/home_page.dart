@@ -50,230 +50,232 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          Container(
-            margin: EdgeInsets.only(top: 10, right: 20, left: 20, bottom: 0),
-            decoration: BoxDecoration(
-              border: Border.all(
-                color: Colors.lightBlueAccent,
-                width: 10,
-              ),
-            ),
-            child: SizedBox(
-              width: 340,
-              height: 60,
-
-              child: Container(
-                alignment: Alignment.center,
-                color: Colors.tealAccent[100],
-                child: Text(
-                  "INTENSITY",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.blue[900],
-                    fontSize: 33,
-                  ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              margin: EdgeInsets.only(top: 10, right: 20, left: 20, bottom: 0),
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.lightBlueAccent,
+                  width: 10,
                 ),
               ),
-            ),
-          ),
+              child: SizedBox(
+                width: 340,
+                height: 60,
 
-          Container(
-            child: Row(
-              children: [
-                Container(
-                  margin: EdgeInsets.only(top: 12, right: 10, left: 23, bottom: 10),
-                  decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.indigo,
-                        offset: const Offset(
-                          -8.0,
-                          8.0,
-                        ),
-                      )
-                    ],
-                    border: Border.all(
-                      color: Colors.lightBlueAccent,
-                      width: 10,
-                    ),
-                  ),
-                  child: SizedBox(
-                    width: 85,
-                    height: 420,
-
-                    child: ElevatedButton(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) => LowHome()));
-
-                        },
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.tealAccent[100],
-                        ),
-
-                        child: Container(
-                          alignment: Alignment.topCenter,
-                          margin: EdgeInsets.only(top:100),
-                          child: Text(
-                            "L\nO\nW",
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-
-                              color: Colors.blue[900],
-                              fontSize: 35,
-                            ),
-                          ),
-                        )
-
-                    ),
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.only(right: 12,left: 5, top: 35),
-                  decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.indigo,
-                        offset: const Offset(
-                          5.0,
-                          8.0,
-                        )),
-                    BoxShadow(
-                      color: Colors.indigo,
-                      offset: const Offset(
-                        -5.0,
-                        8.0,
-                      ),
-                      )
-                    ],
-                    border: Border.all(
-                      color: Colors.lightBlueAccent,
-                      width: 10,
-                    ),
-                  ),
-                  child: SizedBox(
-                    width: 85,
-                    height: 420,
-
-                    child: ElevatedButton(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) => HighHome()));
-
-                        },
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.tealAccent[100],
-                        ),
-
-                        child: Text(
-                          "H\nI\nG\nH",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-
-                            color: Colors.blue[900],
-                            fontSize: 35,
-                          ),
-                        )
-
-                    ),
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.only(right: 18, left: 3, top: 0),
-                  decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.indigo,
-                        offset: const Offset(
-                          8.0,
-                          8.0,
-                        ),
-                      )
-                    ],
-                    border: Border.all(
-                      color: Colors.lightBlueAccent,
-                      width: 10,
-                    ),
-                  ),
-                  child: SizedBox(
-                    width: 85,
-                    height: 420,
-
-                    child: ElevatedButton(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) => MedHome()));
-
-                        },
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.tealAccent[100],
-                        ),
-
-                        child: Container(
-                          alignment: Alignment.topCenter,
-                          margin: EdgeInsets.only(top:100),
-                          child: Text(
-                            "M\nE\nD",
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-
-                              color: Colors.blue[900],
-                              fontSize: 35,
-                            ),
-                          ),
-                        )
-
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Container(
-            margin: EdgeInsets.only(right: 10,left: 5, top:13),
-            decoration: BoxDecoration(
-              border: Border.all(
-                color: Colors.lightBlueAccent,
-                width: 10,
-              ),
-            ),
-            child: SizedBox(
-              width: 340,
-              height: 60,
-
-              child: ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => WorkoutHome()));
-
-                  },
-                  style: ElevatedButton.styleFrom(
-                    primary: Colors.tealAccent[100],
-                  ),
-
+                child: Container(
+                  alignment: Alignment.center,
+                  color: Colors.tealAccent[100],
                   child: Text(
-                    "WORKOUTS",
+                    "INTENSITY",
                     textAlign: TextAlign.center,
                     style: TextStyle(
-
+                      fontWeight: FontWeight.bold,
                       color: Colors.blue[900],
                       fontSize: 33,
                     ),
-                  )
-
+                  ),
+                ),
               ),
             ),
-          ),
 
-      ],
-    )
+            Container(
+              child: Row(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(top: 12, right: 10, left: 23, bottom: 10),
+                    decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.indigo,
+                          offset: const Offset(
+                            -8.0,
+                            8.0,
+                          ),
+                        )
+                      ],
+                      border: Border.all(
+                        color: Colors.lightBlueAccent,
+                        width: 10,
+                      ),
+                    ),
+                    child: SizedBox(
+                      width: 85,
+                      height: 420,
+
+                      child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => LowHome()));
+
+                          },
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.tealAccent[100],
+                          ),
+
+                          child: Container(
+                            alignment: Alignment.topCenter,
+                            margin: EdgeInsets.only(top:100),
+                            child: Text(
+                              "L\nO\nW",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+
+                                color: Colors.blue[900],
+                                fontSize: 35,
+                              ),
+                            ),
+                          )
+
+                      ),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(right: 12,left: 5, top: 35),
+                    decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.indigo,
+                          offset: const Offset(
+                            6.0,
+                            8.0,
+                          )),
+                      BoxShadow(
+                        color: Colors.indigo,
+                        offset: const Offset(
+                          -6.0,
+                          8.0,
+                        ),
+                        )
+                      ],
+                      border: Border.all(
+                        color: Colors.lightBlueAccent,
+                        width: 10,
+                      ),
+                    ),
+                    child: SizedBox(
+                      width: 85,
+                      height: 420,
+
+                      child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => HighHome()));
+
+                          },
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.tealAccent[100],
+                          ),
+
+                          child: Text(
+                            "H\nI\nG\nH",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+
+                              color: Colors.blue[900],
+                              fontSize: 35,
+                            ),
+                          )
+
+                      ),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(right: 18, left: 3, top: 0),
+                    decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.indigo,
+                          offset: const Offset(
+                            8.0,
+                            8.0,
+                          ),
+                        )
+                      ],
+                      border: Border.all(
+                        color: Colors.lightBlueAccent,
+                        width: 10,
+                      ),
+                    ),
+                    child: SizedBox(
+                      width: 85,
+                      height: 420,
+
+                      child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => MedHome()));
+
+                          },
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.tealAccent[100],
+                          ),
+
+                          child: Container(
+                            alignment: Alignment.topCenter,
+                            margin: EdgeInsets.only(top:100),
+                            child: Text(
+                              "M\nE\nD",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+
+                                color: Colors.blue[900],
+                                fontSize: 35,
+                              ),
+                            ),
+                          )
+
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(right: 10,left: 5, top:15),
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.lightBlueAccent,
+                  width: 10,
+                ),
+              ),
+              child: SizedBox(
+                width: 340,
+                height: 60,
+
+                child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => WorkoutHome()));
+
+                    },
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.tealAccent[100],
+                    ),
+
+                    child: Text(
+                      "WORKOUTS",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+
+                        color: Colors.blue[900],
+                        fontSize: 33,
+                      ),
+                    )
+
+                ),
+              ),
+            ),
+
+        ],
+    ),
+      )
     );
 
   }

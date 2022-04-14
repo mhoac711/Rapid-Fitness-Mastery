@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:rapid_fitness_mastery/Exercise.dart';
 import 'package:rapid_fitness_mastery/my-globals.dart' as globals;
+import 'package:rapid_fitness_mastery/settings/saved_home_page.dart';
 
 import '../../my-globals.dart';
 
@@ -25,7 +26,7 @@ class DumbbellWoodChop extends StatelessWidget {
           ),
           backgroundColor: Colors.cyan[200],
           title: Text(
-            'F / H',
+            'U F M',
             style: TextStyle(
               fontFamily: 'LobsterTwo',
               fontWeight: FontWeight.bold,
@@ -35,8 +36,12 @@ class DumbbellWoodChop extends StatelessWidget {
           ),
           actions: [
             IconButton(
-
-              icon: Icon(Icons.settings), onPressed: () {},
+              icon: Icon(Icons.settings), onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SavedHomePage(),
+                  ));
+            },
             ),
           ],
         ),

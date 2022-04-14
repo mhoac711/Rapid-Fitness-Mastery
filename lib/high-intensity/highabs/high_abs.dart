@@ -3,6 +3,7 @@ import 'package:rapid_fitness_mastery/high-intensity/highabs/rainbow_slider.dart
 import 'package:rapid_fitness_mastery/my-globals.dart' as globals;
 import 'package:flutter/material.dart';
 import 'package:rapid_fitness_mastery/Exercise.dart';
+import 'package:rapid_fitness_mastery/settings/saved_home_page.dart';
 
 import 'bicycle_crunch.dart';
 import 'hanging_leg_raise.dart';
@@ -62,8 +63,12 @@ class _HighAbsState extends State<HighAbs> {
         ),
         actions: [
           IconButton(
-
-            icon: Icon(Icons.settings), onPressed: () {},
+            icon: Icon(Icons.settings), onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SavedHomePage(),
+                ));
+          },
           ),
         ],
       ),
