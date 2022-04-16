@@ -80,10 +80,9 @@ class TricepDip extends StatelessWidget {
                     child: Text(
                       e.title,
                       style: TextStyle(
-                        fontFamily: 'PermanentMarker',
                         fontSize: 25,
                         fontWeight: FontWeight.bold,
-                        color: Colors.blueAccent,
+                        color: Colors.lightBlueAccent,
                       ),
                     ),
                   ),
@@ -93,10 +92,9 @@ class TricepDip extends StatelessWidget {
                     child: Text(
                       e.description,
                       style: TextStyle(
-                        fontFamily: 'PermanentMarker',
                         fontSize: 20,
                         fontWeight: FontWeight.normal,
-                        color: Colors.blueAccent,
+                        color: Colors.deepPurple,
                       ),
                     ),
                   ),
@@ -105,7 +103,7 @@ class TricepDip extends StatelessWidget {
                     margin: EdgeInsets.only(top: 30,left: 0),
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.deepPurple,
+                        primary: Colors.blueGrey[700],
                       ),
                       onPressed: (){
                         globalEx.add(e);

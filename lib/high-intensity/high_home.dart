@@ -99,7 +99,7 @@ class _HighHomeState extends State<HighHome> {
                               style: TextStyle(
                                 fontSize: 30,
                                 fontWeight: FontWeight.bold,
-                                color: Colors.blueGrey[800],
+                                color: Colors.blueGrey[700],
                               ),
                             ),
                           ),
@@ -164,7 +164,7 @@ class _HighHomeState extends State<HighHome> {
                               style: TextStyle(
                                 fontSize: 30,
                                 fontWeight: FontWeight.bold,
-                                color: Colors.blueGrey[800],
+                                color: Colors.blueGrey[700],
                               ),
                             ),
                           ),
@@ -228,7 +228,7 @@ class _HighHomeState extends State<HighHome> {
                               style: TextStyle(
                                 fontSize: 30,
                                 fontWeight: FontWeight.bold,
-                                color: Colors.blueGrey[800],
+                                color: Colors.blueGrey[700],
                               ),
                             ),
                           ),

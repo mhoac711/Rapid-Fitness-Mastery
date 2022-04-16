@@ -1,13 +1,7 @@
 import 'dart:ui';
-import 'package:rapid_fitness_mastery/high-intensity/highabs/bicycle_crunch.dart';
-import 'package:rapid_fitness_mastery/high-intensity/highlower/burpees.dart';
 import 'package:rapid_fitness_mastery/high-intensity/highlower/overhead_squat.dart';
-import 'package:rapid_fitness_mastery/low-intensity/lowabs/crunches.dart';
-import 'package:rapid_fitness_mastery/low-intensity/lowabs/reverse_crunch.dart';
 import 'package:rapid_fitness_mastery/low-intensity/lowlower/glute_bridge.dart';
-import 'package:rapid_fitness_mastery/low-intensity/lowlower/high_knees.dart';
 import 'package:rapid_fitness_mastery/low-intensity/lowlower/squat.dart';
-import 'package:rapid_fitness_mastery/low-intensity/lowupper/arm_circle.dart';
 import 'package:rapid_fitness_mastery/low-intensity/lowupper/bicep_curl.dart';
 import 'package:rapid_fitness_mastery/low-intensity/lowupper/dumbell_over_press.dart';
 import 'package:rapid_fitness_mastery/low-intensity/lowupper/inc_dumbbell_press.dart';
@@ -15,9 +9,7 @@ import 'package:rapid_fitness_mastery/low-intensity/lowupper/push_up.dart';
 import 'package:rapid_fitness_mastery/low-intensity/lowupper/res_band_flye.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medabs/flutter_kicks.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medlower/dead_lift.dart';
-import 'package:rapid_fitness_mastery/med-itensity/medlower/donkey_kick.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medlower/dumbbell_walk_lunge.dart';
-import 'package:rapid_fitness_mastery/med-itensity/medlower/plank_jacks.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medupper/bench_press.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medupper/chin_up.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medupper/dumbbell_flye.dart';
@@ -28,7 +20,6 @@ import 'package:rapid_fitness_mastery/Exercise.dart';
 import 'package:rapid_fitness_mastery/my-globals.dart';
 import 'package:rapid_fitness_mastery/settings/saved_home_page.dart';
 
-import '../low-intensity/lowabs/mount_climb.dart';
 
 
 
@@ -149,13 +140,16 @@ class _BulkWorkoutState extends State<BulkWorkout> {
                         primary: Colors.tealAccent[100],
                       ),
 
-                      child: Text(
-                        "Bulking: This includes an increase in caloric intake "
-                            "and intense amount of weight training to build muscle.",
-                        textAlign: TextAlign.left,
-                        style: TextStyle(
-                          color: Colors.blue[900],
-                          fontSize: 20,
+                      child: Container(
+                        margin: EdgeInsets.only(left:12),
+                        child: Text(
+                          "Bulking: This includes an increase in caloric intake "
+                              "and intense amount of weight training to build muscle.",
+                          textAlign: TextAlign.left,
+                          style: TextStyle(
+                            color: Colors.blue[900],
+                            fontSize: 20,
+                          ),
                         ),
                       )
 
@@ -812,7 +806,7 @@ class _BulkWorkoutState extends State<BulkWorkout> {
                 margin: EdgeInsets.only(top: 0, left: 0, bottom: 10),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.deepPurple,
+                    primary: Colors.blueGrey[700],
                   ),
                   onPressed: (){
                     globalWorkEx.add(bp);

@@ -74,7 +74,7 @@ class _HomePageState extends State<HomePage> {
                     style: TextStyle(
                       fontFamily: 'Economica',
                       fontWeight: FontWeight.bold,
-                      color: Colors.blue[900],
+                      color: Colors.blueGrey[800],
                       fontSize: 45,
                     ),
                   ),
@@ -125,7 +125,7 @@ class _HomePageState extends State<HomePage> {
                               textAlign: TextAlign.center,
                               style: TextStyle(
 
-                                color: Colors.blue[900],
+                                color: Colors.blueGrey[800],
                                 fontSize: 35,
                               ),
                             ),
@@ -177,7 +177,7 @@ class _HomePageState extends State<HomePage> {
                             textAlign: TextAlign.center,
                             style: TextStyle(
 
-                              color: Colors.blue[900],
+                              color: Colors.blueGrey[800],
                               fontSize: 35,
                             ),
                           )
@@ -225,7 +225,7 @@ class _HomePageState extends State<HomePage> {
                               textAlign: TextAlign.center,
                               style: TextStyle(
 
-                                color: Colors.blue[900],
+                                color: Colors.blueGrey[800],
                                 fontSize: 35,
                               ),
                             ),
@@ -266,7 +266,7 @@ class _HomePageState extends State<HomePage> {
                       style: TextStyle(
                         fontFamily: "Economica",
                         fontWeight: FontWeight.bold,
-                        color: Colors.blue[900],
+                        color: Colors.blueGrey[800],
                         fontSize: 45,
                       ),
                     )

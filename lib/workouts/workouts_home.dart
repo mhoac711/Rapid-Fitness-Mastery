@@ -101,8 +101,7 @@ class _WorkoutHomeState extends State<WorkoutHome> {
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 fontSize: 24,
-                                fontFamily: 'PermanentMarker',
-                                fontWeight: FontWeight.normal,
+                                fontWeight: FontWeight.bold,
                                 color: Colors.lightBlue[900],
                               ),
                             ),
@@ -167,8 +166,7 @@ class _WorkoutHomeState extends State<WorkoutHome> {
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 fontSize: 24,
-                                fontFamily: 'PermanentMarker',
-                                fontWeight: FontWeight.normal,
+                                fontWeight: FontWeight.bold,
                                 color: Colors.lightBlue[900],
                               ),
                             ),
@@ -232,8 +230,7 @@ class _WorkoutHomeState extends State<WorkoutHome> {
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 fontSize: 24,
-                                fontFamily: 'PermanentMarker',
-                                fontWeight: FontWeight.normal,
+                                fontWeight: FontWeight.bold,
                                 color: Colors.lightBlue[900],
                               ),
                             ),

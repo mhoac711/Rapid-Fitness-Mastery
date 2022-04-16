@@ -566,7 +566,7 @@ class _ShredWorkoutState extends State<ShredWorkout> {
                 margin: EdgeInsets.only(top: 0, left: 0, bottom: 10),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.deepPurple,
+                    primary: Colors.blueGrey[700],
                   ),
                   onPressed: (){
                     globalWorkEx.add(mc);
