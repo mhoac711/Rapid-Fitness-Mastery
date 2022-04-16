@@ -69,11 +69,10 @@ class _MedLowerState extends State<MedLower> {
           ),
           preferredSize: Size.fromHeight(3.0),
         ),
-        backgroundColor: Colors.cyan[200],
+        backgroundColor: Colors.blueGrey[800],
         title: Text(
           'U F M',
           style: TextStyle(
-            fontFamily: 'LobsterTwo',
             fontWeight: FontWeight.bold,
             fontSize: 25,
             color: Colors.tealAccent[100],

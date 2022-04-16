@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
           ),
           preferredSize: Size.fromHeight(3.0),
         ),
-        backgroundColor: Colors.cyan[200],
+        backgroundColor: Colors.blueGrey[800],
         title: Text(
           'U F M',
           style: TextStyle(
@@ -264,9 +264,10 @@ class _HomePageState extends State<HomePage> {
                       "WORKOUTS",
                       textAlign: TextAlign.center,
                       style: TextStyle(
-
+                        fontFamily: "Economica",
+                        fontWeight: FontWeight.bold,
                         color: Colors.blue[900],
-                        fontSize: 33,
+                        fontSize: 45,
                       ),
                     )
 

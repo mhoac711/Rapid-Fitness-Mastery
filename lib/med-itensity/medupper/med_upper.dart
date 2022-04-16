@@ -59,7 +59,7 @@ class _MedUpperState extends State<MedUpper> {
           ),
           preferredSize: Size.fromHeight(3.0),
         ),
-        backgroundColor: Colors.cyan[200],
+        backgroundColor: Colors.blueGrey[800],
         title: Text(
           'U F M',
           style: TextStyle(
@@ -331,7 +331,9 @@ class _MedUpperState extends State<MedUpper> {
 
                       child: Text(
                         rbcr.title,
+                        textAlign: TextAlign.center,
                         style: TextStyle(
+
                           color: Colors.blue[900],
                           fontSize: 25,
                         ),
