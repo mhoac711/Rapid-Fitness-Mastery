@@ -33,7 +33,6 @@ class _MedHomeState extends State<MedHome> {
           title: Text(
             'U F M',
             style: TextStyle(
-              fontFamily: 'LobsterTwo',
               fontWeight: FontWeight.bold,
               fontSize: 25,
               color: Colors.white,
@@ -98,9 +97,8 @@ class _MedHomeState extends State<MedHome> {
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 fontSize: 30,
-                                fontFamily: 'PermanentMarker',
-                                fontWeight: FontWeight.normal,
-                                color: Colors.lightBlue[900],
+                                fontWeight: FontWeight.bold,
+                                color: Colors.blueGrey[800],
                               ),
                             ),
                           ),
@@ -164,9 +162,8 @@ class _MedHomeState extends State<MedHome> {
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 fontSize: 30,
-                                fontFamily: 'PermanentMarker',
-                                fontWeight: FontWeight.normal,
-                                color: Colors.lightBlue[900],
+                                fontWeight: FontWeight.bold,
+                                color: Colors.blueGrey[800],
                               ),
                             ),
                           ),
@@ -229,9 +226,8 @@ class _MedHomeState extends State<MedHome> {
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 fontSize: 30,
-                                fontFamily: 'PermanentMarker',
-                                fontWeight: FontWeight.normal,
-                                color: Colors.lightBlue[900],
+                                fontWeight: FontWeight.bold,
+                                color: Colors.blueGrey[800],
                               ),
                             ),
                           ),
