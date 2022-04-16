@@ -28,7 +28,6 @@ class MedBallCrunch extends StatelessWidget {
           title: Text(
             'U F M',
             style: TextStyle(
-              fontFamily: 'LobsterTwo',
               fontWeight: FontWeight.bold,
               fontSize: 25,
               color: Colors.tealAccent[100],
@@ -89,7 +88,7 @@ class MedBallCrunch extends StatelessWidget {
                   ),
                   Container(
                     alignment: Alignment.topLeft,
-                    margin: EdgeInsets.only(top: 10,left: 25),
+                    margin: EdgeInsets.only(top: 10,left: 25, right:15),
                     child: Text(
                       e.description,
                       style: TextStyle(
@@ -102,7 +101,7 @@ class MedBallCrunch extends StatelessWidget {
                   ),
                   Container(
                     alignment: Alignment.bottomCenter,
-                    margin: EdgeInsets.only(top: 50,left: 0),
+                    margin: EdgeInsets.only(top: 30,left: 0),
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         primary: Colors.deepPurple,

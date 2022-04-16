@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
         title: Text(
           'U F M',
           style: TextStyle(
-            fontFamily: 'LobsterTwo',
+            fontFamily: 'Viga',
             fontWeight: FontWeight.bold,
             fontSize: 25,
             color: Colors.tealAccent[100],
@@ -72,9 +72,10 @@ class _HomePageState extends State<HomePage> {
                     "INTENSITY",
                     textAlign: TextAlign.center,
                     style: TextStyle(
+                      fontFamily: 'Economica',
                       fontWeight: FontWeight.bold,
                       color: Colors.blue[900],
-                      fontSize: 33,
+                      fontSize: 45,
                     ),
                   ),
                 ),
@@ -237,7 +238,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(right: 10,left: 5, top:15),
+              margin: EdgeInsets.only(right: 10,left: 5, top:20),
               decoration: BoxDecoration(
                 border: Border.all(
                   color: Colors.lightBlueAccent,

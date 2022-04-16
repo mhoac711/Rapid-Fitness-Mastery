@@ -42,7 +42,6 @@ class _MedAbsState extends State<MedAbs> {
         'time while alternating legs.');
     Exercise mbc = Exercise('Medicine Ball Crunch', '**This exercise requires a medicine ball**'
         '\n\n Hold the medicine ball with both hands and use your core to crunch up');
-    List<Exercise> lowAbEx = [];
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -58,7 +57,6 @@ class _MedAbsState extends State<MedAbs> {
         title: Text(
           'U F M',
           style: TextStyle(
-            fontFamily: 'LobsterTwo',
             fontWeight: FontWeight.bold,
             fontSize: 25,
             color: Colors.tealAccent[100],

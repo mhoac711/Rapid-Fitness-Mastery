@@ -39,7 +39,6 @@ class _HighAbsState extends State<HighAbs> {
         '\n\n While hanging onto a pull bar, repeated raise your legs together forming a '
         '90 degree angle with your body and release');
 
-    List<Exercise> HighAbEx = [];
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -55,7 +54,6 @@ class _HighAbsState extends State<HighAbs> {
         title: Text(
           'U F M',
           style: TextStyle(
-            fontFamily: 'LobsterTwo',
             fontWeight: FontWeight.bold,
             fontSize: 25,
             color: Colors.tealAccent[100],

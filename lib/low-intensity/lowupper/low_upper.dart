@@ -24,7 +24,9 @@ class LowUpper extends StatefulWidget {
 class _LowUpperState extends State<LowUpper> {
   @override
   Widget build(BuildContext context) {
-    Exercise ote = Exercise('Overhead Tricep Extension', 'Something');
+    Exercise ote = Exercise('Overhead Tricep Extension', '**This exercise requires a dumbbell**'
+        '\n\n 1. Hold one of the sides of the dumbbell with both hands and place behind your head'
+        '\n\n 2. Extend your arms upward to lift the dumbbell');
     Exercise bc = Exercise('Bicep Curl',
         '**This exercise requires dumbbells** \n\n1.Hold a single dumbbell is each hand'
             '\n\n 2.Bring dumbbell forward/ upwards towards your shoulder and release slowly');
@@ -33,13 +35,13 @@ class _LowUpperState extends State<LowUpper> {
         '\n\n 2. Extends your arms upwards and release slowly '
         '\n**Can either be done sitting or standing' );
     Exercise ac = Exercise('Arm circles', 'Extend your arms to the side and '
-        'imagine drawing a circle with both arms\n\n **Try making bigger circles or faster roatations'
-        'for greater workout**');
+        'imagine drawing a circle with both arms\n\n **Try making bigger circles or faster rotations'
+        ' for greater workout**');
     Exercise epu = Exercise('Elevated Push-up', '**This exercise requires some sort of stool or small platform**'
         '\n\nUsing a stool, bench, or dumbbell, get into push-up position and bring your body down and up with your arms');
     Exercise idp = Exercise('Inclined Dumbbell Press', '**This exercise requires a bench and dumbbells**'
         '\n\n1.Using a bench, sit in a slightly leaning back position\n\n 2.Hold each dumbbell'
-        'above your shoulders and extend arms forward and release slowly');
+        ' above your shoulders and extend arms forward and release slowly');
     Exercise pu = Exercise('Push-Up',
         'Get on all fours with arms about shoulder width apart, using your arms force your body down and push back up');
     Exercise rbf = Exercise('Resistance Band Flye', '**This exercise requires a resistance band**'

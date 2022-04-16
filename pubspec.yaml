@@ -51,6 +51,18 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
+  fonts:
+    - family: Vigo
+      fonts:
+        - asset: fonts/Viga-Regular.ttf
+    - family: Economica
+      fonts:
+        - asset: fonts/Economica-Regular.ttf
+        - asset: fonts/Economica-Bold.ttf
+          weight: 700
+        - asset: fonts/Economica-Italic.ttf
+          style: italic
+
   assets:
     - assets/images/
   # The following line ensures that the Material Icons font is

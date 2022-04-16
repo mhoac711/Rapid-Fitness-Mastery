@@ -58,7 +58,6 @@ class _MedLowerState extends State<MedLower> {
         'spread legs outward by jumping and jumping back to original position');
 
 
-    List<Exercise> lowAbEx = [];
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(

@@ -89,7 +89,7 @@ class BulgSplitSquat extends StatelessWidget {
                   ),
                   Container(
                     alignment: Alignment.topLeft,
-                    margin: EdgeInsets.only(top: 10,left: 25),
+                    margin: EdgeInsets.only(top: 10,left: 25, right:15),
                     child: Text(
                       e.description,
                       style: TextStyle(
@@ -102,7 +102,7 @@ class BulgSplitSquat extends StatelessWidget {
                   ),
                   Container(
                     alignment: Alignment.bottomCenter,
-                    margin: EdgeInsets.only(top: 50,left: 0),
+                    margin: EdgeInsets.only(top: 30,left: 0),
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         primary: Colors.deepPurple,

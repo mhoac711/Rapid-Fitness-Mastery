@@ -50,7 +50,6 @@ class _HighLowerState extends State<HighLower> {
         'by moving arms backwards in the same method');
     Exercise run = Exercise('Running','This exercise can be done anywhere. To stay safe, make sure you are '
         'running within your limits and capabilities');
-    List<Exercise> lowAbEx = [];
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -66,7 +65,6 @@ class _HighLowerState extends State<HighLower> {
         title: Text(
           'U F M',
           style: TextStyle(
-            fontFamily: 'LobsterTwo',
             fontWeight: FontWeight.bold,
             fontSize: 25,
             color: Colors.tealAccent[100],

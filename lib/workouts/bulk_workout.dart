@@ -1,82 +1,90 @@
 import 'dart:ui';
+import 'package:rapid_fitness_mastery/high-intensity/highabs/bicycle_crunch.dart';
+import 'package:rapid_fitness_mastery/high-intensity/highlower/burpees.dart';
+import 'package:rapid_fitness_mastery/high-intensity/highlower/overhead_squat.dart';
+import 'package:rapid_fitness_mastery/low-intensity/lowabs/crunches.dart';
+import 'package:rapid_fitness_mastery/low-intensity/lowabs/reverse_crunch.dart';
+import 'package:rapid_fitness_mastery/low-intensity/lowlower/glute_bridge.dart';
+import 'package:rapid_fitness_mastery/low-intensity/lowlower/high_knees.dart';
+import 'package:rapid_fitness_mastery/low-intensity/lowlower/squat.dart';
+import 'package:rapid_fitness_mastery/low-intensity/lowupper/arm_circle.dart';
+import 'package:rapid_fitness_mastery/low-intensity/lowupper/bicep_curl.dart';
+import 'package:rapid_fitness_mastery/low-intensity/lowupper/dumbell_over_press.dart';
+import 'package:rapid_fitness_mastery/low-intensity/lowupper/inc_dumbbell_press.dart';
+import 'package:rapid_fitness_mastery/low-intensity/lowupper/push_up.dart';
+import 'package:rapid_fitness_mastery/low-intensity/lowupper/res_band_flye.dart';
+import 'package:rapid_fitness_mastery/med-itensity/medabs/flutter_kicks.dart';
+import 'package:rapid_fitness_mastery/med-itensity/medlower/dead_lift.dart';
+import 'package:rapid_fitness_mastery/med-itensity/medlower/donkey_kick.dart';
+import 'package:rapid_fitness_mastery/med-itensity/medlower/dumbbell_walk_lunge.dart';
+import 'package:rapid_fitness_mastery/med-itensity/medlower/plank_jacks.dart';
+import 'package:rapid_fitness_mastery/med-itensity/medupper/bench_press.dart';
+import 'package:rapid_fitness_mastery/med-itensity/medupper/chin_up.dart';
+import 'package:rapid_fitness_mastery/med-itensity/medupper/dumbbell_flye.dart';
+import 'package:rapid_fitness_mastery/med-itensity/medupper/tricep_dip.dart';
 import 'package:rapid_fitness_mastery/my-globals.dart' as globals;
 import 'package:flutter/material.dart';
 import 'package:rapid_fitness_mastery/Exercise.dart';
+import 'package:rapid_fitness_mastery/my-globals.dart';
 import 'package:rapid_fitness_mastery/settings/saved_home_page.dart';
 
-import 'bird_dog.dart';
-import 'butt_kicks.dart';
-import 'calf_raise.dart';
-import 'crab_walk.dart';
-import 'dumbbell_step_up.dart';
-import 'floor_hip_ext.dart';
-import 'glute_bridge.dart';
-import 'goblet_squat.dart';
-import 'high_knees.dart';
-import 'jump_rope.dart';
-import 'jumping_jacks.dart';
-import 'lateral_shuffle.dart';
-import 'leg_curl.dart';
-import 'leg_ext.dart';
-import 'leg_press.dart';
-import 'reverse_lunge.dart';
-import 'squat.dart';
+import '../low-intensity/lowabs/mount_climb.dart';
 
-class LowLower extends StatefulWidget {
-  const LowLower({Key? key}) : super(key: key);
+
+
+class BulkWorkout extends StatefulWidget {
+  const BulkWorkout({Key? key}) : super(key: key);
 
   @override
-  State<LowLower> createState() => _LowLowerState();
+  State<BulkWorkout> createState() => _BulkWorkoutState();
 }
 
 
-class _LowLowerState extends State<LowLower> {
+class _BulkWorkoutState extends State<BulkWorkout> {
   @override
   Widget build(BuildContext context) {
-    Exercise gs = Exercise('Goblet Squat', '**This exercise requires a kettlebell or dumbbell**'
-        '\n\n1. Hold the kettlebell if both arms and hold close to your chest'
-        '\n\n2. Bend your knees down and try to have your elbows touch your knees');
-    Exercise dsu = Exercise('Dumbbell Step-up ',
-        '**This exercise requires dumbbells and small platform** '
-            '\n\n1.Hold a single dumbbell is each hand'
-            '\n\n 2. Step onto the platform with one foot and bring it back to the floor'
-            ', while alternating feet.');
+    Exercise bp = Exercise('Bench Press', '**This exercise requires a bench and barbell**'
+        '\n\nEnsure your hold on the barbell is secure and lift the barbell up and down');
+    Exercise idp = Exercise('Inclined Dumbbell Press', '**This exercise requires a bench and dumbbells**'
+        '\n\n1.Using a bench, sit in a slightly leaning back position\n\n 2.Hold each dumbbell'
+        'above your shoulders and extend arms forward and release slowly');
+    Exercise pu = Exercise('Push-Up',
+        'Get on all fours with arms about shoulder width apart, using your arms force your body down and push back up');
+    Exercise dop = Exercise('Dumbbell Overhead Press', '**This exercise requires a set of dumbbells** '
+        '\n\n1.Hold a single dumbbell in each arm and hold them above your shoulders'
+        '\n\n 2. Extends your arms upwards and release slowly '
+        '\n**Can either be done sitting or standing' );
+    Exercise fk = Exercise('Flutter Kicks', 'Lay your back on the mat and rest your butt on your hands and repeatedly slighly lift one leg at a'
+        'time while alternating legs.');
+    Exercise cu = Exercise('Chin-Up', '**This exercise requires a pull up bar**'
+        '\n\nGrab the pull up bar with your palms facing yourself, pull yourself up '
+        'to the point where your chin is above the bar.');
+    Exercise bc = Exercise('Bicep Curl',
+        '**This exercise requires dumbbells** \n\n1.Hold a single dumbbell is each hand'
+            '\n\n 2.Bring dumbbell forward/ upwards towards your shoulder and release slowly');
+    Exercise sq = Exercise('Squat', 'Bend your knees slightly about shoulder width apart and bend down');
+    Exercise dl = Exercise('Dead Lift', '**This exercise requires a barbell**'
+        '\n\n Arch your back slightly so that you can easily grab the barbell from the ground.'
+        'Grab the barbell with both hands and straighten your back and release.');
+    Exercise dwl = Exercise('Dumbbell Walking Lunge', '**This exercise requires a set of dumbbells'
+        '\n\n Holding a dumbbell in each hand step forward and bend one knee while keeping'
+        'the other leg straight. Alternate between sides');
     Exercise gb = Exercise('Glute Bridge',
         'Lay on the mat in sit up position, raise your butt so that your back is parallel'
             'with your legs');
-    Exercise car = Exercise('Calf Raise', 'In a standing position, go on your tiptoes for a'
-        ' brief second and lower'
-        '\n\n**This exercise can be improved with dumbbells');
-    Exercise lc = Exercise('Leg Curl', '**This exercise requires a machine**'
-        '\n\nUsing a leg curl machine, lie downwards with the weight on top of your calves.'
-        'Choose desired weight and raise legs backwards');
-    Exercise le = Exercise('Leg Extension', '**This exercise requires a machine**'
-        '\n\nUsing a leg extension machine, sit with the weight on top of thighs and weight above '
-        'your ankles. Choose desired weight and raise legs');
-    Exercise lp = Exercise('Leg Press',
-        '**This exercise requires a machine**'
-            '\n\nUsing a leg press machine, sit with feet pressing against weight. Choose desired weight'
-            'and push against the weight until near full leg extension and release slowly');
-    Exercise jr = Exercise('Jump Rope', '**This exercise requires a jump rope**'
-        '\n\nUsing a jump rope, constantly swing the rope forward and jump before rope hits your ankles  ');
-    Exercise rl = Exercise('Reverse Lunge', 'Alternate between extending one knee forward and '
-        'while bringing the other downwards near the ground ');
-    Exercise sq = Exercise('Squat', 'Bend your knees slightly about shoulder width apart and bend down');
-    Exercise fhe = Exercise('Floor Hip Extension', '1.Get into a push up position with knees on the floor'
-        '\n\n2. Alternate between extending one leg backwards and returning back to initial position ');
-     Exercise bd = Exercise('Bird-dog', '1.Get into a push up position with knees on the floor'
-        '\n\n2. Raise one arm upwards while extending the opposite side leg, while alternating');
-    Exercise hk = Exercise('High Knees', 'Alternate between bringing up one knee up to about your waist');
+    Exercise rbf = Exercise('Resistance Band Flye', '**This exercise requires a resistance band**'
+        '\n\n1.In a standing position, hold the resistance band with both feet'
+        '\n\n2. Grab one end of the resistance band and bring it upwards near shoulder height and release slowly  ');
+    Exercise df = Exercise('Dumbbell Flye', '**This exercise requires a bench and dumbbells**'
+        '\n\nLay your back on the bench while holding the dumbbells, keep your arms bent and bring arms back');
+    Exercise td = Exercise('Tricep Dips', '**This requires a bench or elevated platform**'
+        '\n\n1. Rest your arms on an elevated platform, while holding your body up'
+        '\n\n2. Dip your body downwards towards the floor and push back up');
+    Exercise os = Exercise('Overhead Squat','**This exercise requires a barbell**'
+        '\n\nHold the barbell above your head and squat down. The easiest way to set this up '
+        'is to use a squat rack. ');
 
-    Exercise bk = Exercise('Butt Kicks', 'Alternate between bringing your legs back and try hitting your butt');
-    Exercise lsh = Exercise('Lateral Shuffle', '**Best if you have something to separate right and left sides**'
-        '\n\nStarting on either right/left side bend your knees slightly and alternate shifting towards to '
-        'the opposite side and touch the floor');
-    Exercise cw = Exercise('Crab Walk', '1. Hold your body up using both arms and leg'
-        '\n\n2. Alternate between moving to the right and left and by shifting both arms and legs');
-    Exercise jj = Exercise('Jumping Jacks', 'Stand straight with legs by your side, simultaneously spreading your'
-        'legs and raising your arms when jumping');
-    List<Exercise> lowLowEx = [];
+
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -114,6 +122,47 @@ class _LowLowerState extends State<LowLower> {
           child: Column(
             children: [
               Container(
+                margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.indigo,
+                      offset: const Offset(
+                        5.0,
+                        5.0,
+                      ),
+                    )
+                  ],
+                  border: Border.all(
+                    color: Colors.lightBlueAccent,
+                    width: 10,
+                  ),
+                ),
+                child: SizedBox(
+                  width: 400,
+                  height: 100,
+
+                  child: ElevatedButton(
+                      onPressed: () {
+                      },
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.tealAccent[100],
+                      ),
+
+                      child: Text(
+                        "Bulking: This includes an increase in caloric intake "
+                            "and intense amount of weight training to build muscle.",
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                          color: Colors.blue[900],
+                          fontSize: 20,
+                        ),
+                      )
+
+                  ),
+                ),
+              ),
+              Container(
                 margin: EdgeInsets.only(top: 15, right: 25, left: 25, bottom: 10),
                 decoration: BoxDecoration(
                   boxShadow: [
@@ -138,15 +187,14 @@ class _LowLowerState extends State<LowLower> {
                       onPressed: () {
                         Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => GobletSquat(e: gs,)));
+                            MaterialPageRoute(builder: (context) => BenchPress(e: bp,)));
                       },
                       style: ElevatedButton.styleFrom(
                         primary: Colors.tealAccent[100],
                       ),
 
                       child: Text(
-                        gs.title,
-                        textAlign: TextAlign.center,
+                        bp.title,
                         style: TextStyle(
                           color: Colors.blue[900],
                           fontSize: 25,
@@ -181,7 +229,7 @@ class _LowLowerState extends State<LowLower> {
                       onPressed: () {
                         Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => DumbbellStepUp(e: dsu,)));
+                            MaterialPageRoute(builder: (context) => IncDumbbellPress(e: idp,)));
 
                       },
                       style: ElevatedButton.styleFrom(
@@ -189,7 +237,7 @@ class _LowLowerState extends State<LowLower> {
                       ),
 
                       child: Text(
-                        dsu.title,
+                        idp.title,
                         style: TextStyle(
                           color: Colors.blue[900],
                           fontSize: 25,
@@ -224,7 +272,7 @@ class _LowLowerState extends State<LowLower> {
                       onPressed: () {
                         Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => GluteBridge(e: gb,)));
+                            MaterialPageRoute(builder: (context) => PushUp(e: pu,)));
 
                       },
                       style: ElevatedButton.styleFrom(
@@ -232,50 +280,7 @@ class _LowLowerState extends State<LowLower> {
                       ),
 
                       child: Text(
-                        gb.title,
-                        style: TextStyle(
-                          color: Colors.blue[900],
-                          fontSize: 25,
-                        ),
-                      )
-
-                  ),
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.indigo,
-                      offset: const Offset(
-                        5.0,
-                        5.0,
-                      ),
-                    )
-                  ],
-                  border: Border.all(
-                    color: Colors.lightBlueAccent,
-                    width: 10,
-                  ),
-                ),
-                child: SizedBox(
-                  width: 400,
-                  height: 100,
-
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => CalfRaise(e: car,)));
-
-                      },
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.tealAccent[100],
-                      ),
-
-                      child: Text(
-                        car.title,
+                        pu.title,
                         style: TextStyle(
                           color: Colors.blue[900],
                           fontSize: 25,
@@ -311,14 +316,14 @@ class _LowLowerState extends State<LowLower> {
                       onPressed: () {
                         Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => LegCurl(e: lc,)));
+                            MaterialPageRoute(builder: (context) => DumbbellOverPress(e: dop,)));
                       },
                       style: ElevatedButton.styleFrom(
                         primary: Colors.tealAccent[100],
                       ),
 
                       child: Text(
-                        lc.title,
+                        dop.title,
                         style: TextStyle(
                           color: Colors.blue[900],
                           fontSize: 25,
@@ -354,14 +359,14 @@ class _LowLowerState extends State<LowLower> {
                       onPressed: () {
                         Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => LegExt(e: le,)));
+                            MaterialPageRoute(builder: (context) => FlutterKicks(e: fk,)));
                       },
                       style: ElevatedButton.styleFrom(
                         primary: Colors.tealAccent[100],
                       ),
 
                       child: Text(
-                        le.title,
+                        fk.title,
                         style: TextStyle(
                           color: Colors.blue[900],
                           fontSize: 25,
@@ -392,66 +397,25 @@ class _LowLowerState extends State<LowLower> {
                   width: 400,
                   height: 100,
 
-                  child: ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => LegPress(e: lp,)));
-                    },
-                    style: ElevatedButton.styleFrom(
-                      primary: Colors.tealAccent[100],
-                    ),
-
-                    child: Text(
-                      lp.title,
-                      style: TextStyle(
-                        color: Colors.blue[900],
-                        fontSize: 25,
-                      ),
-                    ),
-
-                  ),
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.indigo,
-                      offset: const Offset(
-                        5.0,
-                        5.0,
-                      ),
-                    )
-                  ],
-                  border: Border.all(
-                    color: Colors.lightBlueAccent,
-                    width: 10,
-                  ),
-                ),
-                child: SizedBox(
-                  width: 400,
-                  height: 100,
 
                   child: ElevatedButton(
-
                       onPressed: () {
                         Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => JumpRope(e: jr,)));
+                            MaterialPageRoute(builder: (context) => ChinUp(e: cu,)));
                       },
                       style: ElevatedButton.styleFrom(
                         primary: Colors.tealAccent[100],
                       ),
 
                       child: Text(
-                        jr.title,
+                        cu.title,
                         style: TextStyle(
                           color: Colors.blue[900],
                           fontSize: 25,
                         ),
                       )
+
                   ),
                 ),
               ),
@@ -476,19 +440,19 @@ class _LowLowerState extends State<LowLower> {
                   width: 400,
                   height: 100,
 
+
                   child: ElevatedButton(
                       onPressed: () {
                         Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => ReverseLunge(e: rl,)));
-
+                            MaterialPageRoute(builder: (context) => BicepCurl(e: bc,)));
                       },
                       style: ElevatedButton.styleFrom(
                         primary: Colors.tealAccent[100],
                       ),
 
                       child: Text(
-                        rl.title,
+                        bc.title,
                         style: TextStyle(
                           color: Colors.blue[900],
                           fontSize: 25,
@@ -566,7 +530,7 @@ class _LowLowerState extends State<LowLower> {
                       onPressed: () {
                         Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => FloorHipExt(e: fhe,)));
+                            MaterialPageRoute(builder: (context) => DeadLift(e: dl,)));
 
                       },
                       style: ElevatedButton.styleFrom(
@@ -574,7 +538,7 @@ class _LowLowerState extends State<LowLower> {
                       ),
 
                       child: Text(
-                        fhe.title,
+                        dl.title,
                         style: TextStyle(
                           color: Colors.blue[900],
                           fontSize: 25,
@@ -609,7 +573,7 @@ class _LowLowerState extends State<LowLower> {
                       onPressed: () {
                         Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => BirdDog(e: bd,)));
+                            MaterialPageRoute(builder: (context) => DumbbellWalkLunge(e: dwl,)));
 
                       },
                       style: ElevatedButton.styleFrom(
@@ -617,7 +581,7 @@ class _LowLowerState extends State<LowLower> {
                       ),
 
                       child: Text(
-                        bd.title,
+                        dwl.title,
                         style: TextStyle(
                           color: Colors.blue[900],
                           fontSize: 25,
@@ -652,7 +616,7 @@ class _LowLowerState extends State<LowLower> {
                       onPressed: () {
                         Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => HighKnees(e: hk,)));
+                            MaterialPageRoute(builder: (context) => GluteBridge(e: gb,)));
 
                       },
                       style: ElevatedButton.styleFrom(
@@ -660,7 +624,7 @@ class _LowLowerState extends State<LowLower> {
                       ),
 
                       child: Text(
-                        hk.title,
+                        gb.title,
                         style: TextStyle(
                           color: Colors.blue[900],
                           fontSize: 25,
@@ -695,7 +659,7 @@ class _LowLowerState extends State<LowLower> {
                       onPressed: () {
                         Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => ButtKicks(e: bk,)));
+                            MaterialPageRoute(builder: (context) => ResBandFlye(e: rbf,)));
 
                       },
                       style: ElevatedButton.styleFrom(
@@ -703,7 +667,7 @@ class _LowLowerState extends State<LowLower> {
                       ),
 
                       child: Text(
-                        bk.title,
+                        rbf.title,
                         style: TextStyle(
                           color: Colors.blue[900],
                           fontSize: 25,
@@ -738,7 +702,7 @@ class _LowLowerState extends State<LowLower> {
                       onPressed: () {
                         Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => LateralShuffle(e: lsh,)));
+                            MaterialPageRoute(builder: (context) => DumbbellFlye(e: df,)));
 
                       },
                       style: ElevatedButton.styleFrom(
@@ -746,7 +710,7 @@ class _LowLowerState extends State<LowLower> {
                       ),
 
                       child: Text(
-                        lsh.title,
+                        df.title,
                         style: TextStyle(
                           color: Colors.blue[900],
                           fontSize: 25,
@@ -781,7 +745,7 @@ class _LowLowerState extends State<LowLower> {
                       onPressed: () {
                         Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => CrabWalk(e: cw,)));
+                            MaterialPageRoute(builder: (context) => TricepDip(e: td,)));
 
                       },
                       style: ElevatedButton.styleFrom(
@@ -789,7 +753,7 @@ class _LowLowerState extends State<LowLower> {
                       ),
 
                       child: Text(
-                        cw.title,
+                        td.title,
                         style: TextStyle(
                           color: Colors.blue[900],
                           fontSize: 25,
@@ -824,7 +788,7 @@ class _LowLowerState extends State<LowLower> {
                       onPressed: () {
                         Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => JumpingJacks(e: jj,)));
+                            MaterialPageRoute(builder: (context) => OverheadSquat(e: os,)));
 
                       },
                       style: ElevatedButton.styleFrom(
@@ -832,7 +796,7 @@ class _LowLowerState extends State<LowLower> {
                       ),
 
                       child: Text(
-                        jj.title,
+                        os.title,
                         style: TextStyle(
                           color: Colors.blue[900],
                           fontSize: 25,
@@ -842,6 +806,83 @@ class _LowLowerState extends State<LowLower> {
                   ),
                 ),
               ),
+
+              Container(
+                alignment: Alignment.bottomCenter,
+                margin: EdgeInsets.only(top: 0, left: 0, bottom: 10),
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.deepPurple,
+                  ),
+                  onPressed: (){
+                    globalWorkEx.add(bp);
+                    globalWorkEx.add(idp);
+                    globalWorkEx.add(pu);
+                    globalWorkEx.add(dop);
+                    globalWorkEx.add(fk);
+                    globalWorkEx.add(cu);
+                    globalWorkEx.add(bc);
+                    globalWorkEx.add(sq);
+                    globalWorkEx.add(dl);
+                    globalWorkEx.add(dwl);
+                    globalWorkEx.add(gb);
+                    globalWorkEx.add(rbf);
+                    globalWorkEx.add(df);
+                    globalWorkEx.add(td);
+                    globalWorkEx.add(os);
+
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                            content: SizedBox(
+                              height: 30,
+                              width:  100,
+                              child: Center(
+                                child: Container(
+                                  margin: EdgeInsets.only(top:7),
+                                  child: Text(
+                                    'Workout Saved',
+                                    style: TextStyle(
+                                      fontSize: 25,
+                                      color: Colors.blue[900],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            actions: [
+                              Center(
+                                child: Container(
+                                  margin: EdgeInsets.only(bottom: 5),
+                                  child: OutlinedButton(
+                                    style: ButtonStyle(
+                                        shape: MaterialStateProperty.all(
+                                            RoundedRectangleBorder(
+                                              borderRadius: BorderRadius.circular(10),
+                                            )
+                                        )
+                                    ),
+                                    child: Text(
+                                      'OK',
+                                      style: TextStyle(
+                                        color: Colors.blue[900],
+                                      ),
+
+                                    ),
+                                    onPressed: () => Navigator.pop(context),
+                                  ),
+                                ),
+                              )
+                            ]
+
+                        )
+                    );
+
+                  },
+                  child: Text(
+                      "Save All"
+                  ),
+                ),),
 
             ],
           ),

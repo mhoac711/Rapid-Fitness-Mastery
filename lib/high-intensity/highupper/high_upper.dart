@@ -39,7 +39,6 @@ class _HighUpperState extends State<HighUpper> {
         'but when going up push your body upwards so that you have a short time period to clap '
         'your hands before returning to original position');
 
-    List<Exercise> lowAbEx = [];
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -55,7 +54,6 @@ class _HighUpperState extends State<HighUpper> {
         title: Text(
           'U F M',
           style: TextStyle(
-            fontFamily: 'LobsterTwo',
             fontWeight: FontWeight.bold,
             fontSize: 25,
             color: Colors.tealAccent[100],

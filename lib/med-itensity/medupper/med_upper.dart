@@ -48,7 +48,6 @@ class _MedUpperState extends State<MedUpper> {
     Exercise dbpu = Exercise('Dive Bomber Push-up', '1. Start in a push up position'
         '\n\n2. While going up, keep your legs down'
         '\n\n3. Once arms are back up, raise lower body all the way up');
-    List<Exercise> lowAbEx = [];
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -64,7 +63,6 @@ class _MedUpperState extends State<MedUpper> {
         title: Text(
           'U F M',
           style: TextStyle(
-            fontFamily: 'LobsterTwo',
             fontWeight: FontWeight.bold,
             fontSize: 25,
             color: Colors.tealAccent[100],

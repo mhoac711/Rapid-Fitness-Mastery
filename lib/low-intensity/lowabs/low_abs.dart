@@ -24,13 +24,16 @@ class _LowAbsState extends State<LowAbs> {
   Widget build(BuildContext context) {
     Exercise su = Exercise('Sit Ups',
         '1. Lay your back on the mat with knees pointing upwards \n\n2. Focus on using your core to pull yourself up and relax when going down');
-    Exercise mc = Exercise('Moutain Climbers',
+    Exercise mc = Exercise('Mountain Climbers',
         'Get into push up position and bring one knee to the opposite shoulder in alternating motions');
     Exercise rt = Exercise('Russian Twist',
         'Get into sit up position and rotate your abs to the right or left side. You should try to focus on using your core to move directions. Use a dumbbell for stronger exercise');
     Exercise pl = Exercise('Plank',
         'Get into push up position, but have with your elbows parallel to the mat, hold this position for 30 secs. Increase duration for greater workout');
-    Exercise db = Exercise('Dead Bug', 'Idk this one do later');
+    Exercise db = Exercise('Dead Bug', '1. Lay on your back and raise your arms straight up while also raising your legs '
+        'at a 90 degree angle'
+        '\n\n 2. Alternate between lowering one arm towards the top of your head while simultaneously'
+        'extending the opposite leg');
     Exercise rc = Exercise('Reverse Crunch',
         'Lay on your back fully with your knees slightly bent. From here use your core to bring your legs upward, crunch, and return to laying position');
     Exercise cr = Exercise('Crunches',

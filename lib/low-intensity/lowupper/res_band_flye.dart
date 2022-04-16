@@ -89,7 +89,7 @@ class ResBandFlye extends StatelessWidget {
       ),
       Container(
         alignment: Alignment.topLeft,
-        margin: EdgeInsets.only(top: 10,left: 25),
+        margin: EdgeInsets.only(top: 10,left: 25, right: 15),
         child: Text(
           e.description,
           style: TextStyle(

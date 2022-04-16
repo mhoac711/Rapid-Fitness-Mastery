@@ -55,7 +55,6 @@ class _ShredWorkoutState extends State<ShredWorkout> {
         '\n\n 3. Jump up and raise your whole body!');
 
 
-    List<Exercise> HighAbEx = [];
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(

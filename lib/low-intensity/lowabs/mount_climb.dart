@@ -76,7 +76,7 @@ class MountClimb extends StatelessWidget {
                   ),
                   Container(
                     alignment: Alignment.topLeft,
-                    margin: EdgeInsets.only(top: 20,left: 25),
+                    margin: EdgeInsets.only(top: 20,left: 25, right: 15),
                     child: Text(
                       e.title,
                       style: TextStyle(
