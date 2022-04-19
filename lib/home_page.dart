@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_glow/flutter_glow.dart';
 import 'package:rapid_fitness_mastery/high-intensity/high_home.dart';
 import 'package:rapid_fitness_mastery/low-intensity/low_home.dart';
 import 'package:rapid_fitness_mastery/med-itensity/med_home.dart';
@@ -30,8 +31,9 @@ class _HomePageState extends State<HomePage> {
           preferredSize: Size.fromHeight(3.0),
         ),
         backgroundColor: Colors.blueGrey[800],
-        title: Text(
+        title: GlowText(
           'U F M',
+          glowColor: Colors.lightBlueAccent[100],
           style: TextStyle(
             fontFamily: 'Viga',
             fontWeight: FontWeight.bold,
@@ -41,7 +43,7 @@ class _HomePageState extends State<HomePage> {
         ),
         actions: [
           IconButton(
-            icon: Icon(Icons.settings), onPressed: () {
+            icon: Icon(IconData(0xeecc, fontFamily: 'MaterialIcons')), onPressed: () {
             Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => SavedHomePage(),
@@ -68,8 +70,10 @@ class _HomePageState extends State<HomePage> {
                 child: Container(
                   alignment: Alignment.center,
                   color: Colors.tealAccent[100],
-                  child: Text(
+                  child: GlowText(
                     "INTENSITY",
+                    glowColor: Colors.lightBlue[600],
+                    blurRadius: 10,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontFamily: 'Economica',
@@ -120,8 +124,10 @@ class _HomePageState extends State<HomePage> {
                           child: Container(
                             alignment: Alignment.topCenter,
                             margin: EdgeInsets.only(top:100),
-                            child: Text(
+                            child: GlowText(
                               "L\nO\nW",
+                              glowColor: Colors.lightBlue[600],
+                              blurRadius: 10,
                               textAlign: TextAlign.center,
                               style: TextStyle(
 
@@ -172,8 +178,10 @@ class _HomePageState extends State<HomePage> {
                             primary: Colors.tealAccent[100],
                           ),
 
-                          child: Text(
-                            "H\nI\nG\nH",
+                          child:GlowText(
+                                "H\nI\nG\nH",
+                                glowColor: Colors.lightBlue[600],
+                                blurRadius: 10,
                             textAlign: TextAlign.center,
                             style: TextStyle(
 
@@ -220,8 +228,10 @@ class _HomePageState extends State<HomePage> {
                           child: Container(
                             alignment: Alignment.topCenter,
                             margin: EdgeInsets.only(top:100),
-                            child: Text(
+                            child: GlowText(
                               "M\nE\nD",
+                              glowColor: Colors.lightBlue[600],
+                              blurRadius: 10,
                               textAlign: TextAlign.center,
                               style: TextStyle(
 
@@ -260,8 +270,10 @@ class _HomePageState extends State<HomePage> {
                       primary: Colors.tealAccent[100],
                     ),
 
-                    child: Text(
+                    child: GlowText(
                       "WORKOUTS",
+                      glowColor: Colors.lightBlue[600],
+                      blurRadius: 10,
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontFamily: "Economica",

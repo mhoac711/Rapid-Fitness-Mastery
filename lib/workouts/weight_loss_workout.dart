@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:flutter_glow/flutter_glow.dart';
 import 'package:rapid_fitness_mastery/high-intensity/highabs/bicycle_crunch.dart';
 import 'package:rapid_fitness_mastery/high-intensity/highlower/burpees.dart';
 import 'package:rapid_fitness_mastery/high-intensity/highlower/hill_sprints.dart';
@@ -102,10 +103,11 @@ class _WeightLossWorkoutState extends State<WeightLossWorkout> {
           preferredSize: Size.fromHeight(3.0),
         ),
         backgroundColor: Colors.blueGrey[800],
-        title: Text(
+        title: GlowText(
           'U F M',
+          glowColor: Colors.lightBlueAccent[100],
           style: TextStyle(
-            fontFamily: 'LobsterTwo',
+            fontFamily: 'Viga',
             fontWeight: FontWeight.bold,
             fontSize: 25,
             color: Colors.tealAccent[100],
@@ -113,7 +115,7 @@ class _WeightLossWorkoutState extends State<WeightLossWorkout> {
         ),
         actions: [
           IconButton(
-            icon: Icon(Icons.settings), onPressed: () {
+            icon: Icon(IconData(0xeecc, fontFamily: 'MaterialIcons')), onPressed: () {
             Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => SavedHomePage(),
@@ -1129,6 +1131,13 @@ class _WeightLossWorkoutState extends State<WeightLossWorkout> {
               globalWorkEx.add(mc);
               globalWorkEx.add(pl);
               globalWorkEx.add(sq);
+              globalWorkEx.add(bc);
+              globalWorkEx.add(cw);
+              globalWorkEx.add(pu);
+              globalWorkEx.add(fk);
+              globalWorkEx.add(rc);
+              globalWorkEx.add(hcr);
+              globalWorkEx.add(gb);
 
               showDialog(
                   context: context,

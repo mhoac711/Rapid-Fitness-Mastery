@@ -2,6 +2,7 @@ import 'dart:math';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_glow/flutter_glow.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medlower/med_lower.dart';
 import 'package:rapid_fitness_mastery/settings/saved_home_page.dart';
 
@@ -30,17 +31,19 @@ class _MedHomeState extends State<MedHome> {
             preferredSize: Size.fromHeight(3.0),
           ),
           backgroundColor: Colors.blueGrey[800],
-          title: Text(
+          title: GlowText(
             'U F M',
+            glowColor: Colors.lightBlueAccent[100],
             style: TextStyle(
+              fontFamily: 'Viga',
               fontWeight: FontWeight.bold,
               fontSize: 25,
-              color: Colors.white,
+              color: Colors.tealAccent[100],
             ),
           ),
           actions: [
             IconButton(
-              icon: Icon(Icons.settings), onPressed: () {
+              icon: Icon(IconData(0xeecc, fontFamily: 'MaterialIcons')), onPressed: () {
               Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => SavedHomePage(),

@@ -35,7 +35,7 @@ class SingleDumbbellPress extends StatelessWidget {
           ),
           actions: [
             IconButton(
-              icon: Icon(Icons.settings), onPressed: () {
+              icon: Icon(IconData(0xeecc, fontFamily: 'MaterialIcons')), onPressed: () {
               Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => SavedHomePage(),

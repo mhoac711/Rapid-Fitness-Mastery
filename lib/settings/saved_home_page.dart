@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:rapid_fitness_mastery/high-intensity/high_home.dart';
 import 'package:rapid_fitness_mastery/low-intensity/low_home.dart';
 import 'package:rapid_fitness_mastery/med-itensity/med_home.dart';
+import 'package:rapid_fitness_mastery/settings/philosophy.dart';
+import 'package:rapid_fitness_mastery/settings/saved_exercises.dart';
 import 'package:rapid_fitness_mastery/settings/saved_workout_exercises.dart';
 import 'package:rapid_fitness_mastery/workouts/workouts_home.dart';
 
@@ -35,7 +37,6 @@ class _SavedHomePageState extends State<SavedHomePage> {
           title: Text(
             'U F M',
             style: TextStyle(
-              fontFamily: 'LobsterTwo',
               fontWeight: FontWeight.bold,
               fontSize: 25,
               color: Colors.tealAccent[100],
@@ -43,7 +44,9 @@ class _SavedHomePageState extends State<SavedHomePage> {
           ),
           actions: [
             IconButton(
-              icon: Icon(Icons.settings), onPressed: () {
+              icon: Icon(
+                  IconData(0xeecc, fontFamily: 'MaterialIcons')
+              ), onPressed: () {
               Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => SavedHomePage(),
@@ -56,110 +59,164 @@ class _SavedHomePageState extends State<SavedHomePage> {
           children: [
             Container(
               alignment: Alignment.center,
-              margin: EdgeInsets.only(top: 15),
               child: Container(
-                decoration: ShapeDecoration(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(0),
-                    ),
-                    color: Colors.cyan[200]),
-                child: SizedBox(
-                  width: 360,
-                  height: 60,
-                  child: IconButton(
-                    alignment: Alignment.center,
-                    icon: Container(
-                      child: Text(
-                        'Saved Exercises',
-                        style: TextStyle(
-                          fontSize: 38,
-                          fontFamily: 'PermanentMarker',
-                          fontWeight: FontWeight.normal,
-                          color: Colors.lightBlue[900],
-                        ),
+                margin: EdgeInsets.only(right: 10,left: 5, top:20),
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                        color: Colors.indigo,
+                        offset: const Offset(
+                          6.0,
+                          8.0,
+                        )),
+                    BoxShadow(
+                      color: Colors.indigo,
+                      offset: const Offset(
+                        -6.0,
+                        8.0,
                       ),
-                    ),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => SavedExercises(),
-                          ));
-                    },
+                    )
+                  ],
+                  border: Border.all(
+                    color: Colors.lightBlueAccent,
+                    width: 10,
+                  ),
+                ),
+                child: SizedBox(
+                  width: 340,
+                  height: 60,
+
+                  child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => SavedExercises()));
+
+                      },
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.tealAccent[100],
+                      ),
+
+                      child: Text(
+                        "Saved Exercises",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontFamily: "Economica",
+                          fontWeight: FontWeight.bold,
+                          color: Colors.blueGrey[800],
+                          fontSize: 45,
+                        ),
+                      )
+
                   ),
                 ),
               ),
             ),
             Container(
-              alignment: Alignment.center,
-              margin: EdgeInsets.only(top: 15),
-              child: Container(
-                decoration: ShapeDecoration(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(0),
+              margin: EdgeInsets.only(right: 10,left: 5, top:20),
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                      color: Colors.indigo,
+                      offset: const Offset(
+                        6.0,
+                        8.0,
+                      )),
+                  BoxShadow(
+                    color: Colors.indigo,
+                    offset: const Offset(
+                      -6.0,
+                      8.0,
                     ),
-                    color: Colors.cyan[200]),
-                child: SizedBox(
-                  width: 360,
-                  height: 60,
-                  child: IconButton(
-                    alignment: Alignment.center,
-                    icon: Container(
-                      child: Text(
-                        'Saved Workouts',
-                        style: TextStyle(
-                          fontSize: 38,
-                          fontFamily: 'PermanentMarker',
-                          fontWeight: FontWeight.normal,
-                          color: Colors.lightBlue[900],
-                        ),
-                      ),
-                    ),
+                  )
+                ],
+                border: Border.all(
+                  color: Colors.lightBlueAccent,
+                  width: 10,
+                ),
+              ),
+              child: SizedBox(
+                width: 340,
+                height: 60,
+
+                child: ElevatedButton(
                     onPressed: () {
                       Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => SavedWorkoutEx(),
-                          ));
+                          MaterialPageRoute(builder: (context) => SavedWorkoutEx()));
+
                     },
-                  ),
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.tealAccent[100],
+                    ),
+
+                    child: Text(
+                      "Saved Workouts",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontFamily: "Economica",
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blueGrey[800],
+                        fontSize: 45,
+                      ),
+                    )
+
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(right: 10,left: 5, top:20),
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                      color: Colors.indigo,
+                      offset: const Offset(
+                        6.0,
+                        8.0,
+                      )),
+                  BoxShadow(
+                    color: Colors.indigo,
+                    offset: const Offset(
+                      -6.0,
+                      8.0,
+                    ),
+                  )
+                ],
+                border: Border.all(
+                  color: Colors.lightBlueAccent,
+                  width: 10,
+                ),
+              ),
+              child: SizedBox(
+                width: 340,
+                height: 60,
+
+                child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Philosophy()));
+
+                    },
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.tealAccent[100],
+                    ),
+
+                    child: Text(
+                      "Philosophy",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontFamily: "Economica",
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blueGrey[800],
+                        fontSize: 45,
+                      ),
+                    )
+
                 ),
               ),
             ),
 
-            Container(
-              alignment: Alignment.center,
-              margin: EdgeInsets.only(top: 15),
-              child: Container(
-                decoration: ShapeDecoration(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(0),
-                    ),
-                    color: Colors.cyan[200]),
-                child: SizedBox(
-                  width: 360,
-                  height: 60,
-                  child: IconButton(
-                    alignment: Alignment.center,
-                    icon: Container(
-                      child: Text(
-                        'Philosophy',
-                        style: TextStyle(
-                          fontSize: 38,
-                          fontFamily: 'PermanentMarker',
-                          fontWeight: FontWeight.normal,
-                          color: Colors.lightBlue[900],
-                        ),
-                      ),
-                    ),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => WorkoutHome(),
-                          ));
-                    },
-                  ),
-                ),
-              ),
-            ),
           ],
         )
     );

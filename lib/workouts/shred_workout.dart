@@ -70,7 +70,6 @@ class _ShredWorkoutState extends State<ShredWorkout> {
         title: Text(
           'U F M',
           style: TextStyle(
-            fontFamily: 'LobsterTwo',
             fontWeight: FontWeight.bold,
             fontSize: 25,
             color: Colors.tealAccent[100],
@@ -78,7 +77,7 @@ class _ShredWorkoutState extends State<ShredWorkout> {
         ),
         actions: [
           IconButton(
-            icon: Icon(Icons.settings), onPressed: () {
+            icon: Icon(IconData(0xeecc, fontFamily: 'MaterialIcons')), onPressed: () {
             Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => SavedHomePage(),
