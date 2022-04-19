@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_glow/flutter_glow.dart';
 import 'package:rapid_fitness_mastery/Exercise.dart';
 import 'package:rapid_fitness_mastery/my-globals.dart' as globals;
 import 'package:rapid_fitness_mastery/settings/saved_home_page.dart';
@@ -25,9 +26,11 @@ class DiveBombPushUp extends StatelessWidget {
             preferredSize: Size.fromHeight(3.0),
           ),
           backgroundColor: Colors.blueGrey[800],
-          title: Text(
+          title: GlowText(
             'U F M',
+            glowColor: Colors.lightBlueAccent[100],
             style: TextStyle(
+              fontFamily: 'Viga',
               fontWeight: FontWeight.bold,
               fontSize: 25,
               color: Colors.tealAccent[100],

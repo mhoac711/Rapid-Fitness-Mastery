@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_glow/flutter_glow.dart';
 import 'package:rapid_fitness_mastery/high-intensity/high_home.dart';
 import 'package:rapid_fitness_mastery/low-intensity/low_home.dart';
 import 'package:rapid_fitness_mastery/med-itensity/med_home.dart';
@@ -34,9 +35,11 @@ class _SavedHomePageState extends State<SavedHomePage> {
             preferredSize: Size.fromHeight(3.0),
           ),
           backgroundColor: Colors.blueGrey[800],
-          title: Text(
+          title: GlowText(
             'U F M',
+            glowColor: Colors.lightBlueAccent[100],
             style: TextStyle(
+              fontFamily: 'Viga',
               fontWeight: FontWeight.bold,
               fontSize: 25,
               color: Colors.tealAccent[100],

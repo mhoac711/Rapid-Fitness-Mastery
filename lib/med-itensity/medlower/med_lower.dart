@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:flutter_glow/flutter_glow.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medlower/single_leg_glute_bridge.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medlower/sled_push.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medlower/squat_jump.dart';
@@ -70,9 +71,11 @@ class _MedLowerState extends State<MedLower> {
           preferredSize: Size.fromHeight(3.0),
         ),
         backgroundColor: Colors.blueGrey[800],
-        title: Text(
+        title: GlowText(
           'U F M',
+          glowColor: Colors.lightBlueAccent[100],
           style: TextStyle(
+            fontFamily: 'Viga',
             fontWeight: FontWeight.bold,
             fontSize: 25,
             color: Colors.tealAccent[100],

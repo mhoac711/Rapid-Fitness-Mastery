@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:flutter_glow/flutter_glow.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medupper/res_band_cross.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medupper/yoga_push_up.dart';
 import 'package:rapid_fitness_mastery/my-globals.dart' as globals;
@@ -60,9 +61,11 @@ class _MedUpperState extends State<MedUpper> {
           preferredSize: Size.fromHeight(3.0),
         ),
         backgroundColor: Colors.blueGrey[800],
-        title: Text(
+        title: GlowText(
           'U F M',
+          glowColor: Colors.lightBlueAccent[100],
           style: TextStyle(
+            fontFamily: 'Viga',
             fontWeight: FontWeight.bold,
             fontSize: 25,
             color: Colors.tealAccent[100],

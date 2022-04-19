@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:flutter_glow/flutter_glow.dart';
 import 'package:rapid_fitness_mastery/high-intensity/highabs/bicycle_crunch.dart';
 import 'package:rapid_fitness_mastery/high-intensity/highlower/burpees.dart';
 import 'package:rapid_fitness_mastery/low-intensity/lowabs/crunches.dart';
@@ -67,9 +68,11 @@ class _ShredWorkoutState extends State<ShredWorkout> {
           preferredSize: Size.fromHeight(3.0),
         ),
         backgroundColor: Colors.blueGrey[800],
-        title: Text(
+        title: GlowText(
           'U F M',
+          glowColor: Colors.lightBlueAccent[100],
           style: TextStyle(
+            fontFamily: 'Viga',
             fontWeight: FontWeight.bold,
             fontSize: 25,
             color: Colors.tealAccent[100],
