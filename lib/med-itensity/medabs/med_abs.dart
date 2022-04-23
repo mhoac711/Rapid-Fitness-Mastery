@@ -7,7 +7,6 @@ import 'package:rapid_fitness_mastery/settings/saved_home_page.dart';
 
 import 'dumbbell_wood_chop.dart';
 import 'flutter_kicks.dart';
-import 'hand_walk.dart';
 import 'leg_raise.dart';
 import 'med_ball_crunch.dart';
 import 'plank_toe_tap.dart';
@@ -27,9 +26,6 @@ class _MedAbsState extends State<MedAbs> {
     Exercise lr = Exercise('Leg Raise',
         '1. Lay your back on the mat with legs extended and toes pointing upwards '
             '\n\n2. Focus on using your core to pull your legs straight up and relax');
-    Exercise hw = Exercise('Hand Walk',
-        'From a standing position, bend down to touch your toes and use your hands to walk forward and backwards while '
-            'keeping your legs put');
     Exercise pltt = Exercise('Plank w/ Toe-Tap',
         'Starting in a push up position, alternate between lifting one foot and '
             'tapping to the side while keeping the other put');
@@ -113,49 +109,6 @@ class _MedAbsState extends State<MedAbs> {
 
                       child: Text(
                         lr.title,
-                        style: TextStyle(
-                          color: Colors.blue[900],
-                          fontSize: 25,
-                        ),
-                      )
-
-                  ),
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.indigo,
-                      offset: const Offset(
-                        5.0,
-                        5.0,
-                      ),
-                    )
-                  ],
-                  border: Border.all(
-                    color: Colors.lightBlueAccent,
-                    width: 10,
-                  ),
-                ),
-                child: SizedBox(
-                  width: 400,
-                  height: 100,
-
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => HandWalk(e: hw,)));
-
-                      },
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.tealAccent[100],
-                      ),
-
-                      child: Text(
-                        hw.title,
                         style: TextStyle(
                           color: Colors.blue[900],
                           fontSize: 25,

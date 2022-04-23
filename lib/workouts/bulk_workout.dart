@@ -4,10 +4,8 @@ import 'package:rapid_fitness_mastery/high-intensity/highlower/overhead_squat.da
 import 'package:rapid_fitness_mastery/low-intensity/lowlower/glute_bridge.dart';
 import 'package:rapid_fitness_mastery/low-intensity/lowlower/squat.dart';
 import 'package:rapid_fitness_mastery/low-intensity/lowupper/bicep_curl.dart';
-import 'package:rapid_fitness_mastery/low-intensity/lowupper/dumbell_over_press.dart';
 import 'package:rapid_fitness_mastery/low-intensity/lowupper/inc_dumbbell_press.dart';
 import 'package:rapid_fitness_mastery/low-intensity/lowupper/push_up.dart';
-import 'package:rapid_fitness_mastery/low-intensity/lowupper/res_band_flye.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medabs/flutter_kicks.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medlower/dead_lift.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medlower/dumbbell_walk_lunge.dart';
@@ -42,10 +40,6 @@ class _BulkWorkoutState extends State<BulkWorkout> {
         'above your shoulders and extend arms forward and release slowly');
     Exercise pu = Exercise('Push-Up',
         'Get on all fours with arms about shoulder width apart, using your arms force your body down and push back up');
-    Exercise dop = Exercise('Dumbbell Overhead Press', '**This exercise requires a set of dumbbells** '
-        '\n\n1.Hold a single dumbbell in each arm and hold them above your shoulders'
-        '\n\n 2. Extends your arms upwards and release slowly '
-        '\n**Can either be done sitting or standing' );
     Exercise fk = Exercise('Flutter Kicks', 'Lay your back on the mat and rest your butt on your hands and repeatedly slighly lift one leg at a'
         'time while alternating legs.');
     Exercise cu = Exercise('Chin-Up', '**This exercise requires a pull up bar**'
@@ -64,9 +58,6 @@ class _BulkWorkoutState extends State<BulkWorkout> {
     Exercise gb = Exercise('Glute Bridge',
         'Lay on the mat in sit up position, raise your butt so that your back is parallel'
             'with your legs');
-    Exercise rbf = Exercise('Resistance Band Flye', '**This exercise requires a resistance band**'
-        '\n\n1.In a standing position, hold the resistance band with both feet'
-        '\n\n2. Grab one end of the resistance band and bring it upwards near shoulder height and release slowly  ');
     Exercise df = Exercise('Dumbbell Flye', '**This exercise requires a bench and dumbbells**'
         '\n\nLay your back on the bench while holding the dumbbells, keep your arms bent and bring arms back');
     Exercise td = Exercise('Tricep Dips', '**This requires a bench or elevated platform**'
@@ -277,49 +268,6 @@ class _BulkWorkoutState extends State<BulkWorkout> {
 
                       child: Text(
                         pu.title,
-                        style: TextStyle(
-                          color: Colors.blue[900],
-                          fontSize: 25,
-                        ),
-                      )
-
-                  ),
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.indigo,
-                      offset: const Offset(
-                        5.0,
-                        5.0,
-                      ),
-                    )
-                  ],
-                  border: Border.all(
-                    color: Colors.lightBlueAccent,
-                    width: 10,
-                  ),
-                ),
-                child: SizedBox(
-                  width: 400,
-                  height: 100,
-
-
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => DumbbellOverPress(e: dop,)));
-                      },
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.tealAccent[100],
-                      ),
-
-                      child: Text(
-                        dop.title,
                         style: TextStyle(
                           color: Colors.blue[900],
                           fontSize: 25,
@@ -630,49 +578,7 @@ class _BulkWorkoutState extends State<BulkWorkout> {
                   ),
                 ),
               ),
-              Container(
-                margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.indigo,
-                      offset: const Offset(
-                        5.0,
-                        5.0,
-                      ),
-                    )
-                  ],
-                  border: Border.all(
-                    color: Colors.lightBlueAccent,
-                    width: 10,
-                  ),
-                ),
-                child: SizedBox(
-                  width: 400,
-                  height: 100,
 
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => ResBandFlye(e: rbf,)));
-
-                      },
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.tealAccent[100],
-                      ),
-
-                      child: Text(
-                        rbf.title,
-                        style: TextStyle(
-                          color: Colors.blue[900],
-                          fontSize: 25,
-                        ),
-                      )
-
-                  ),
-                ),
-              ),
               Container(
                 margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
                 decoration: BoxDecoration(
@@ -814,7 +720,6 @@ class _BulkWorkoutState extends State<BulkWorkout> {
                     globalWorkEx.add(bp);
                     globalWorkEx.add(idp);
                     globalWorkEx.add(pu);
-                    globalWorkEx.add(dop);
                     globalWorkEx.add(fk);
                     globalWorkEx.add(cu);
                     globalWorkEx.add(bc);
@@ -822,7 +727,6 @@ class _BulkWorkoutState extends State<BulkWorkout> {
                     globalWorkEx.add(dl);
                     globalWorkEx.add(dwl);
                     globalWorkEx.add(gb);
-                    globalWorkEx.add(rbf);
                     globalWorkEx.add(df);
                     globalWorkEx.add(td);
                     globalWorkEx.add(os);

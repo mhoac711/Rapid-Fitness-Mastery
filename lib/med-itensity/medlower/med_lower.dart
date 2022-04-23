@@ -1,7 +1,6 @@
 import 'dart:ui';
 import 'package:flutter_glow/flutter_glow.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medlower/single_leg_glute_bridge.dart';
-import 'package:rapid_fitness_mastery/med-itensity/medlower/sled_push.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medlower/squat_jump.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medlower/wall_sit.dart';
 import 'package:rapid_fitness_mastery/my-globals.dart' as globals;
@@ -11,7 +10,6 @@ import 'package:rapid_fitness_mastery/settings/saved_home_page.dart';
 
 import 'alt_toe_touch.dart';
 import 'box_jump.dart';
-import 'bulgarian_split_squat.dart';
 import 'dead_lift.dart';
 import 'donkey_kick.dart';
 import 'dumbbell_walk_lunge.dart';
@@ -37,8 +35,6 @@ class _MedLowerState extends State<MedLower> {
     Exercise dwl = Exercise('Dumbbell Walking Lunge', '**This exercise requires a set of dumbbells'
         '\n\n Holding a dumbbell in each hand step forward and bend one knee while keeping'
         'the other leg straight. Alternate between sides');
-    Exercise sp = Exercise('Sled Push', '**This exercise requires equipment**'
-        '\n\n Place desired amount of weight on sled and simply push a certain distance');
     Exercise slgb = Exercise('Single Leg Glute Bridge', 'Starting in a sit up position,'
         'lift one leg up while keeping the thighs parallel and push your waist upwards'
         'Alternate between sides');
@@ -46,9 +42,6 @@ class _MedLowerState extends State<MedLower> {
         '\n\nPlace desired height box with plentiful landing space in safe area and jump on top');
     Exercise ws = Exercise('Wall Sit', 'Go beside a wall and imagine sitting in a chair, try holding'
         'in 30 secs increments');
-    Exercise bss = Exercise('Bulgarian Split Squat', '**This exercise is best with a bench**'
-        '\n\n While in front of the bench, rest one foot on the bench and squat down.'
-        'Alternate sides after finishing set');
     Exercise dk = Exercise('Donkey Kick', 'Get into quadruped position and alternate between lifting your legs'
         'upwards while keeping knees bent');
     Exercise att = Exercise('Alternating Toe Touch','Lay fully back on the mat and try'
@@ -245,49 +238,6 @@ class _MedLowerState extends State<MedLower> {
                   width: 400,
                   height: 100,
 
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => SledPush(e: sp,)));
-
-                      },
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.tealAccent[100],
-                      ),
-
-                      child: Text(
-                        sp.title,
-                        style: TextStyle(
-                          color: Colors.blue[900],
-                          fontSize: 25,
-                        ),
-                      )
-
-                  ),
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.indigo,
-                      offset: const Offset(
-                        5.0,
-                        5.0,
-                      ),
-                    )
-                  ],
-                  border: Border.all(
-                    color: Colors.lightBlueAccent,
-                    width: 10,
-                  ),
-                ),
-                child: SizedBox(
-                  width: 400,
-                  height: 100,
-
 
                   child: ElevatedButton(
                       onPressed: () {
@@ -391,49 +341,6 @@ class _MedLowerState extends State<MedLower> {
                         fontSize: 25,
                       ),
                     ),
-
-                  ),
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.indigo,
-                      offset: const Offset(
-                        5.0,
-                        5.0,
-                      ),
-                    )
-                  ],
-                  border: Border.all(
-                    color: Colors.lightBlueAccent,
-                    width: 10,
-                  ),
-                ),
-                child: SizedBox(
-                  width: 400,
-                  height: 100,
-
-                  child: ElevatedButton(
-
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => BulgSplitSquat(e: bss,)));
-                      },
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.tealAccent[100],
-                      ),
-
-                      child: Text(
-                        bss.title,
-                        style: TextStyle(
-                          color: Colors.blue[900],
-                          fontSize: 25,
-                        ),
-                      )
 
                   ),
                 ),

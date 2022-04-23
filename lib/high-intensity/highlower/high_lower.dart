@@ -10,7 +10,6 @@ import 'package:rapid_fitness_mastery/settings/saved_home_page.dart';
 
 import 'burpees.dart';
 import 'elevator_squat.dart';
-import 'hang_clean.dart';
 import 'hill_sprints.dart';
 import 'inchworm_crawl.dart';
 import 'overhead_squat.dart';
@@ -31,10 +30,6 @@ class _HighLowerState extends State<HighLower> {
     Exercise os = Exercise('Overhead Squat','**This exercise requires a barbell**'
         '\n\nHold the barbell above your head and squat down. The easiest way to set this up '
         'is to use a squat rack. ');
-    Exercise hc = Exercise('Hang Clean','**This exercise requires a barbell**'
-        '\n\n While arching your back, hold the barbell at about knee height and swing the '
-        'barbell upwards while bending your elbows to secure it. At the same time, you should be '
-        'doing a squat');
     Exercise evs = Exercise('Elevator Squat','Get into a standard squat position. While doing this '
         'squat, instead of going all the way down, go down in small intervals and hold for a few secs');
     Exercise psq = Exercise('Pistol Squat','From a standing position, extend one leg out and '
@@ -64,7 +59,7 @@ class _HighLowerState extends State<HighLower> {
         ),
         backgroundColor: Colors.blueGrey[800],
         title: GlowText(
-          'U F M',
+          'R F M',
           glowColor: Colors.lightBlueAccent[100],
           style: TextStyle(
             fontFamily: 'Viga',
@@ -121,49 +116,6 @@ class _HighLowerState extends State<HighLower> {
 
                       child: Text(
                         os.title,
-                        style: TextStyle(
-                          color: Colors.blue[900],
-                          fontSize: 25,
-                        ),
-                      )
-
-                  ),
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.indigo,
-                      offset: const Offset(
-                        5.0,
-                        5.0,
-                      ),
-                    )
-                  ],
-                  border: Border.all(
-                    color: Colors.lightBlueAccent,
-                    width: 10,
-                  ),
-                ),
-                child: SizedBox(
-                  width: 400,
-                  height: 100,
-
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => HangClean(e: hc,)));
-
-                      },
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.tealAccent[100],
-                      ),
-
-                      child: Text(
-                        hc.title,
                         style: TextStyle(
                           color: Colors.blue[900],
                           fontSize: 25,

@@ -1,6 +1,5 @@
 import 'dart:ui';
 import 'package:flutter_glow/flutter_glow.dart';
-import 'package:rapid_fitness_mastery/med-itensity/medupper/res_band_cross.dart';
 import 'package:rapid_fitness_mastery/med-itensity/medupper/yoga_push_up.dart';
 import 'package:rapid_fitness_mastery/my-globals.dart' as globals;
 import 'package:flutter/material.dart';
@@ -39,9 +38,6 @@ class _MedUpperState extends State<MedUpper> {
         '\n\n **This exercise is best done with dumbbells**');
     Exercise bp = Exercise('Bench Press', '**This exercise requires a bench and barbell**'
         '\n\nEnsure your hold on the barbell is secure and lift the barbell up and down');
-    Exercise rbcr = Exercise('Resistance Band Cross-over', '**This exercise requires a resistance band**'
-        '\n\nHold the resistance band with one handle '
-        'in each hand behind your back. Slowly pull the bands towards the middle of your body');
     Exercise ypu = Exercise('Yoga Ball Push-up', '**This exercise requires a yoga ball**'
         '\n\n Rest your feet on the yoga ball while holding the position with your arms, then do a push up.');
     Exercise df = Exercise('Dumbbell Flye', '**This exercise requires a bench and dumbbells**'
@@ -293,51 +289,6 @@ class _MedUpperState extends State<MedUpper> {
                       child: Text(
                         bp.title,
                         style: TextStyle(
-                          color: Colors.blue[900],
-                          fontSize: 25,
-                        ),
-                      )
-
-                  ),
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.indigo,
-                      offset: const Offset(
-                        5.0,
-                        5.0,
-                      ),
-                    )
-                  ],
-                  border: Border.all(
-                    color: Colors.lightBlueAccent,
-                    width: 10,
-                  ),
-                ),
-                child: SizedBox(
-                  width: 400,
-                  height: 100,
-
-
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => ResBandCross(e: rbcr,)));
-                      },
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.tealAccent[100],
-                      ),
-
-                      child: Text(
-                        rbcr.title,
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-
                           color: Colors.blue[900],
                           fontSize: 25,
                         ),

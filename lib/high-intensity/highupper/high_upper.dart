@@ -9,7 +9,6 @@ import 'barbell_front_raise.dart';
 import 'push_up_clap.dart';
 import 'single_dumbbell_press.dart';
 import 'tri_push_up.dart';
-import 'weighted_dip.dart';
 
 
 
@@ -32,10 +31,6 @@ class _HighUpperState extends State<HighUpper> {
         'to about shoulder height');
     Exercise sdp = Exercise('Single Dumbbell Press','**This exercise requires a dumbbell**'
         '\n\n Hold the dumbbell above your shoulder and raise it until fully extending arm');
-    Exercise wd = Exercise('Weighted Dip','**This exercise requires weight and a dip machine**'
-        '\n\n 1. Use a dip machine or somewhere you can raise your body above the floor with both hands'
-        '\n\n 2. Dip down by bending elbows'
-        '\n\n **This exercise can vary in difficulty by attaching weight via a belt');
     Exercise puc = Exercise('Push-Up Clap','Get into push-up position and do a regular push-up,'
         'but when going up push your body upwards so that you have a short time period to clap '
         'your hands before returning to original position');
@@ -205,49 +200,7 @@ class _HighUpperState extends State<HighUpper> {
                   ),
                 ),
               ),
-              Container(
-                margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.indigo,
-                      offset: const Offset(
-                        5.0,
-                        5.0,
-                      ),
-                    )
-                  ],
-                  border: Border.all(
-                    color: Colors.lightBlueAccent,
-                    width: 10,
-                  ),
-                ),
-                child: SizedBox(
-                  width: 400,
-                  height: 100,
 
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => WeightedDip(e: wd,)));
-
-                      },
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.tealAccent[100],
-                      ),
-
-                      child: Text(
-                        wd.title,
-                        style: TextStyle(
-                          color: Colors.blue[900],
-                          fontSize: 25,
-                        ),
-                      )
-
-                  ),
-                ),
-              ),
               Container(
                 margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
                 decoration: BoxDecoration(
