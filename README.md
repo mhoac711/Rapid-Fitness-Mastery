@@ -1,16 +1,29 @@
 # rapid_fitness_mastery
+$ Rapid Fitness Mastery
 
-A new Flutter project.
+Table of Contents:
+1. Overview
+2. App Philosophy
+3. Wireframe
+4. Download
 
-## Getting Started
+# 1. Overview
+One of the most common New Year’s Resolution is the concept of obtaining or maintaining
+better health through exercise, however this goal is often dropped by most participants within the first
+couple of months possibly due to a lack of commitment, malpractice, or the depreciation of motivation.
+Although, the decision to partake in exercise is completely dependent on the individual, I believe that
+there are ways to significantly ease the process of getting an individual accustomed to a healthier
+lifestyle that includes exercise.
 
-This project is a starting point for a Flutter application.
+# 2. App Philosophy
+Rapid Fitness Mastery is designed to provide users with an incredibly easy way of finding and learning about 
+a variety of exercises that are categorized by experience level and training area. Overall, Rapid Fitness Mastery hopes to alleviate some of the struggles that individuals may have when trying to obtain a healthier lifestyle.
 
-A few resources to get you started if this is your first Flutter project:
+# 3. Wireframe
+[View Wireframe on Figma:](https://www.figma.com/file/wXnVb6RYangqo0I2oeFkij/Rapid-Fitness-Mastery)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![Rapid Fitness Mastery Wireframe](https://user-images.githubusercontent.com/89217847/165011769-95653526-ade5-498c-931c-423e175eda0a.png)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# 4. Download
+
+                           
