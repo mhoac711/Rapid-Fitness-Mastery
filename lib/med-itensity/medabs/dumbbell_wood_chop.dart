@@ -27,7 +27,7 @@ class DumbbellWoodChop extends StatelessWidget {
           ),
           backgroundColor: Colors.blueGrey[800],
           title: GlowText(
-            'U F M',
+            'R F M',
             glowColor: Colors.lightBlueAccent[100],
             style: TextStyle(
               fontFamily: 'Viga',
@@ -71,7 +71,7 @@ class DumbbellWoodChop extends StatelessWidget {
                     ),
                     margin: EdgeInsets.only(top: 35, left: 15, right: 15),
                     child: Image.asset(
-                      'assets/images/i.jpg',
+                      'assets/images/dumbWoodChop.gif',
                       height: 250,
                       width: 350,
                       scale: 50,

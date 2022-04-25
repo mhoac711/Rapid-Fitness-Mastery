@@ -12,11 +12,8 @@ import 'crab_walk.dart';
 import 'dumbbell_step_up.dart';
 import 'floor_hip_ext.dart';
 import 'glute_bridge.dart';
-import 'goblet_squat.dart';
 import 'high_knees.dart';
-import 'jump_rope.dart';
 import 'jumping_jacks.dart';
-import 'lateral_shuffle.dart';
 import 'leg_curl.dart';
 import 'leg_ext.dart';
 import 'leg_press.dart';
@@ -34,9 +31,6 @@ class LowLower extends StatefulWidget {
 class _LowLowerState extends State<LowLower> {
   @override
   Widget build(BuildContext context) {
-    Exercise gs = Exercise('Goblet Squat', '**This exercise requires a kettlebell or dumbbell**'
-        '\n\n1. Hold the kettlebell if both arms and hold close to your chest'
-        '\n\n2. Bend your knees down and try to have your elbows touch your knees');
     Exercise dsu = Exercise('Dumbbell Step-up ',
         '**This exercise requires dumbbells and small platform** '
             '\n\n1.Hold a single dumbbell is each hand'
@@ -58,8 +52,6 @@ class _LowLowerState extends State<LowLower> {
         '**This exercise requires a machine**'
             '\n\nUsing a leg press machine, sit with feet pressing against weight. Choose desired weight'
             'and push against the weight until near full leg extension and release slowly');
-    Exercise jr = Exercise('Jump Rope', '**This exercise requires a jump rope**'
-        '\n\nUsing a jump rope, constantly swing the rope forward and jump before rope hits your ankles  ');
     Exercise rl = Exercise('Reverse Lunge', 'Alternate between extending one knee forward and '
         'while bringing the other downwards near the ground ');
     Exercise sq = Exercise('Squat', 'Bend your knees slightly about shoulder width apart and bend down');
@@ -70,9 +62,6 @@ class _LowLowerState extends State<LowLower> {
     Exercise hk = Exercise('High Knees', 'Alternate between bringing up one knee up to about your waist');
 
     Exercise bk = Exercise('Butt Kicks', 'Alternate between bringing your legs back and try hitting your butt');
-    Exercise lsh = Exercise('Lateral Shuffle', '**Best if you have something to separate right and left sides**'
-        '\n\nStarting on either right/left side bend your knees slightly and alternate shifting towards to '
-        'the opposite side and touch the floor');
     Exercise cw = Exercise('Crab Walk', '1. Hold your body up using both arms and leg'
         '\n\n2. Alternate between moving to the right and left and by shifting both arms and legs');
     Exercise jj = Exercise('Jumping Jacks', 'Stand straight with legs by your side, simultaneously spreading your'
@@ -91,7 +80,7 @@ class _LowLowerState extends State<LowLower> {
         ),
         backgroundColor: Colors.blueGrey[800],
         title: GlowText(
-          'U F M',
+          'R F M',
           glowColor: Colors.lightBlueAccent[100],
           style: TextStyle(
             fontFamily: 'Viga',
@@ -115,49 +104,6 @@ class _LowLowerState extends State<LowLower> {
         child: Center(
           child: Column(
             children: [
-              Container(
-                margin: EdgeInsets.only(top: 15, right: 25, left: 25, bottom: 10),
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.indigo,
-                      offset: const Offset(
-                        5.0,
-                        5.0,
-                      ),
-                    )
-                  ],
-                  border: Border.all(
-                    color: Colors.lightBlueAccent,
-                    width: 10,
-                  ),
-                ),
-                child: SizedBox(
-                  width: 400,
-                  height: 100,
-
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => GobletSquat(e: gs,)));
-                      },
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.tealAccent[100],
-                      ),
-
-                      child: Text(
-                        gs.title,
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.blue[900],
-                          fontSize: 25,
-                        ),
-                      )
-
-                  ),
-                ),
-              ),
               Container(
                 margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
                 decoration: BoxDecoration(
@@ -437,48 +383,6 @@ class _LowLowerState extends State<LowLower> {
                   height: 100,
 
                   child: ElevatedButton(
-
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => JumpRope(e: jr,)));
-                      },
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.tealAccent[100],
-                      ),
-
-                      child: Text(
-                        jr.title,
-                        style: TextStyle(
-                          color: Colors.blue[900],
-                          fontSize: 25,
-                        ),
-                      )
-                  ),
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.indigo,
-                      offset: const Offset(
-                        5.0,
-                        5.0,
-                      ),
-                    )
-                  ],
-                  border: Border.all(
-                    color: Colors.lightBlueAccent,
-                    width: 10,
-                  ),
-                ),
-                child: SizedBox(
-                  width: 400,
-                  height: 100,
-
-                  child: ElevatedButton(
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -706,49 +610,6 @@ class _LowLowerState extends State<LowLower> {
 
                       child: Text(
                         bk.title,
-                        style: TextStyle(
-                          color: Colors.blue[900],
-                          fontSize: 25,
-                        ),
-                      )
-
-                  ),
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.only(top: 10, right: 25, left: 25, bottom: 10),
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.indigo,
-                      offset: const Offset(
-                        5.0,
-                        5.0,
-                      ),
-                    )
-                  ],
-                  border: Border.all(
-                    color: Colors.lightBlueAccent,
-                    width: 10,
-                  ),
-                ),
-                child: SizedBox(
-                  width: 400,
-                  height: 100,
-
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => LateralShuffle(e: lsh,)));
-
-                      },
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.tealAccent[100],
-                      ),
-
-                      child: Text(
-                        lsh.title,
                         style: TextStyle(
                           color: Colors.blue[900],
                           fontSize: 25,

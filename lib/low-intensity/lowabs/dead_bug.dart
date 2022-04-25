@@ -69,7 +69,7 @@ class DeadBug extends StatelessWidget {
                     ),
                     margin: EdgeInsets.only(top: 35, left: 15, right: 15),
                     child: Image.asset(
-                      'assets/images/i.jpg',
+                      'assets/images/deadBug.gif',
                       height: 250,
                       width: 350,
                       scale: 50,

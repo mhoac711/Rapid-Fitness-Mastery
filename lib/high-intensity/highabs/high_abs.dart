@@ -53,7 +53,7 @@ class _HighAbsState extends State<HighAbs> {
         ),
         backgroundColor: Colors.blueGrey[800],
         title: GlowText(
-          'U F M',
+          'R F M',
           glowColor: Colors.lightBlueAccent[100],
           style: TextStyle(
             fontFamily: 'Viga',

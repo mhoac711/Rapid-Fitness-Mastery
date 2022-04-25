@@ -27,7 +27,7 @@ class _PhilosophyState extends State<Philosophy> {
           ),
           backgroundColor: Colors.blueGrey[800],
           title: GlowText(
-            'U F M',
+            'R F M',
             glowColor: Colors.lightBlueAccent[100],
             style: TextStyle(
               fontFamily: 'Viga',
@@ -64,25 +64,26 @@ class _PhilosophyState extends State<Philosophy> {
                   )
                 ],
                 border: Border.all(
-                  color: Colors.lightBlueAccent,
+                  color: Colors.tealAccent,
                   width: 10,
                 ),
               ),
               child: SizedBox(
                 width: 400,
-                height: 350,
+                height: 400,
                   child: ElevatedButton(
                     onPressed: () {  },
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.tealAccent[100],
+                      primary: Colors.teal[50],
                     ),
                     child: Column(
                       children: [
                         Container(
                           alignment: Alignment.topCenter,
                           margin: EdgeInsets.only(top: 10),
-                          child: Text(
-                            'App Philosophy:',
+                          child: GlowText(
+                            'Philosophy:',
+                              glowColor: Colors.lightBlueAccent,
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 decoration: TextDecoration.underline,
@@ -98,9 +99,15 @@ class _PhilosophyState extends State<Philosophy> {
                         Container(
                           alignment: Alignment.topCenter,
                           margin: EdgeInsets.only(top: 10),
+
                           child: Text(
-                            'The purpose of this app is to provide users with an easy way of accessing and finding exercises that fit their level of experience and challenge themselves with exercises that have an increased difficulty.',
-                            textAlign: TextAlign.left,
+                            'Rapid Fitness Mastery is designed to provide users with'
+                                'an incredibly easy way of finding and learning about '
+                                'a variety of exercises that are categorized by experience '
+                                'level and training area. Overall, Rapid Fitness Mastery hopes'
+                                ' to alleviate some of the struggles that individuals may have '
+                                'when trying to obtain a healthier lifestyle',
+                            textAlign: TextAlign.center,
                             style: TextStyle(
 
                               color: Colors.blueGrey[800],

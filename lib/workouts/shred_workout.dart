@@ -30,7 +30,7 @@ class ShredWorkout extends StatefulWidget {
 class _ShredWorkoutState extends State<ShredWorkout> {
   @override
   Widget build(BuildContext context) {
-    Exercise mc = Exercise('Moutain Climbers',
+    Exercise mc = Exercise('Mountain Climbers',
         'Get into push up position and bring one knee to the opposite shoulder in alternating motions');
     Exercise jj = Exercise('Jumping Jacks', 'Stand straight with legs by your side, simultaneously spreading your'
         'legs and raising your arms when jumping');
@@ -69,7 +69,7 @@ class _ShredWorkoutState extends State<ShredWorkout> {
         ),
         backgroundColor: Colors.blueGrey[800],
         title: GlowText(
-          'U F M',
+          'R F M',
           glowColor: Colors.lightBlueAccent[100],
           style: TextStyle(
             fontFamily: 'Viga',

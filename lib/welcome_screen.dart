@@ -27,7 +27,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           Container(
             margin: EdgeInsets.only(left: 20, right: 10, bottom: 15),
                   child: GlowText(
-                    'U\nF\nM',
+                    'R\nF\nM',
                     glowColor: Colors.lightBlueAccent[100],
                     blurRadius: 15,
                     textAlign: TextAlign.center,

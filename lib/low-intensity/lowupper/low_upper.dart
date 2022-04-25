@@ -9,7 +9,7 @@ import 'arm_circle.dart';
 import 'bicep_curl.dart';
 import 'elevated_push_up.dart';
 import 'inc_dumbbell_press.dart';
-import 'overhead_tricper_ext.dart';
+import 'overhead_tricep_ext.dart';
 import 'push_up.dart';
 
 class LowUpper extends StatefulWidget {
@@ -52,7 +52,7 @@ class _LowUpperState extends State<LowUpper> {
         ),
         backgroundColor: Colors.blueGrey[800],
         title: GlowText(
-          'U F M',
+          'R F M',
           glowColor: Colors.lightBlueAccent[100],
           style: TextStyle(
             fontFamily: 'Viga',
