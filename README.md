@@ -1,5 +1,5 @@
 # rapid_fitness_mastery
-$ Rapid Fitness Mastery
+Rapid Fitness Mastery
 
 Table of Contents:
 1. Overview
@@ -22,7 +22,7 @@ a variety of exercises that are categorized by experience level and training are
 # 3. Wireframe
 [View Wireframe on Figma:](https://www.figma.com/file/wXnVb6RYangqo0I2oeFkij/Rapid-Fitness-Mastery)
 
-![Rapid Fitness Mastery Wireframe](https://user-images.githubusercontent.com/89217847/165011769-95653526-ade5-498c-931c-423e175eda0a.png)
+![Rapid Fitness Mastery Wireframe](https://user-images.githubusercontent.com/89217847/165011910-a5727344-f846-46f8-8ae8-41260ed88d3c.png))
 
 # 4. Download
 
