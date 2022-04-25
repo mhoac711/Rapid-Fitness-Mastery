@@ -1,7 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:rapid_fitness_mastery/low-intensity/low_home.dart';
-import 'package:rapid_fitness_mastery/settings/saved.dart';
 import 'package:rapid_fitness_mastery/welcome_screen.dart';
 import 'Exercise.dart';
 import 'home_page.dart';
@@ -18,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Fitness Manager',
+      title: 'Rapid Fitness Mastery',
       theme: ThemeData(
         fontFamily: 'Economica-Bold',
         // This is the theme of your application.
@@ -76,77 +74,8 @@ class _MyHomePageState extends State<MyHomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
-    Exercise jump = Exercise('jumping','jump a lot');
-    Exercise pushUp = Exercise('Push up', 'go up and down with arms');
     List<Exercise> exArr = [];
     return Scaffold(
-      appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-            Text(
-              jump.title,
-              style: Theme.of(context).textTheme.headline4,
-            ),
-            Text(
-              jump.description,
-              style: Theme.of(context).textTheme.headline4,
-            ),
-            FloatingActionButton(
-              child: Text(
-                "Home page"
-              ),
-                onPressed: (){
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => HomePage(),
-                  ));
-
-                },
-            ),
-            FloatingActionButton(
-              child: Text(
-                "low abs"
-              ),
-                onPressed: (){
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => LowHome(),
-                      ));
-
-                }
-            )
-
-          ],
-
-        ),
-      ),
-
-
-      floatingActionButton: FloatingActionButton(
-        onPressed: (){
-          exArr.add(jump);
-          exArr.add(pushUp);
-          Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => saved(strArr: exArr,)));
-        },
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
-    );
+    )
   }
 }
