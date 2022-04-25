@@ -1,5 +1,5 @@
 # rapid_fitness_mastery
-Rapid Fitness Mastery
+# Rapid Fitness Mastery
 
 Table of Contents:
 1. Overview
