@@ -76,6 +76,6 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     List<Exercise> exArr = [];
     return Scaffold(
-    )
+    );
   }
 }
