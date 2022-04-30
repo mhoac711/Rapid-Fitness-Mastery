@@ -25,5 +25,6 @@ a variety of exercises that are categorized by experience level and training are
 ![Rapid Fitness Mastery Wireframe](https://user-images.githubusercontent.com/89217847/165011910-a5727344-f846-46f8-8ae8-41260ed88d3c.png))
 
 # 4. Download
+Will be available on Google Play Store soon!
 
                            
