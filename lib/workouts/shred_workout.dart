@@ -80,7 +80,7 @@ class _ShredWorkoutState extends State<ShredWorkout> {
         ),
         actions: [
           IconButton(
-            icon: Icon(IconData(0xeecc, fontFamily: 'MaterialIcons')), onPressed: () {
+            icon: Icon(const IconData(0xeecc, fontFamily: 'MaterialIcons')), onPressed: () {
             Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => SavedHomePage(),
